@@ -1,3 +1,3 @@
 # Architecture
 
-![Architectural Diagram](./WIP-Architectural-Diagram.jpg)
+![Architectural Diagram](./WIP-Arch-Diagram.jpg)
