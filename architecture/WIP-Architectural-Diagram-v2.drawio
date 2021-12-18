@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-18T07:42:57.654Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="gsO8X_6tGJFZU7roq7jr" version="16.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-18T07:48:50.864Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="DvW8hkDD0Og1Z_SN_Ehj" version="16.0.0" type="github">
   <diagram id="ZgDnklnv8hs0AD4zhIGA" name="Page-1">
     <mxGraphModel dx="903" dy="503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -163,29 +163,30 @@
         <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-27" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Hashed&lt;br style=&quot;font-size: 10px;&quot;&gt;Payload&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/span&gt;" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=10;size=10;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0" vertex="1" parent="vQHYAsxkU6DZZQ9oV_Qt-28">
           <mxGeometry width="80.29" height="54.95" as="geometry" />
         </mxCell>
-        <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.133;entryY=1.004;entryDx=0;entryDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;startArrow=none;strokeColor=#6C8EBF;entryPerimeter=0;" edge="1" parent="1" source="vQHYAsxkU6DZZQ9oV_Qt-73" target="tGK0brASN7LOrKUB66ZN-31">
+        <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;startArrow=none;strokeColor=#6C8EBF;" edge="1" parent="1" source="vQHYAsxkU6DZZQ9oV_Qt-73" target="tGK0brASN7LOrKUB66ZN-31">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-73" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="580" y="487" width="90" height="60" as="geometry" />
+        <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-73" value="&lt;font style=&quot;line-height: 0.9 ; font-size: 12px&quot; color=&quot;#002e5c&quot;&gt;name, email, username, password&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=12;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#007FFF;" vertex="1" parent="1">
+          <mxGeometry x="684.8" y="477" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;endArrow=none;strokeColor=#6C8EBF;" edge="1" parent="1" source="vQHYAsxkU6DZZQ9oV_Qt-13" target="vQHYAsxkU6DZZQ9oV_Qt-73">
+        <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;endArrow=none;strokeColor=#6C8EBF;" edge="1" parent="1" source="vQHYAsxkU6DZZQ9oV_Qt-13" target="vQHYAsxkU6DZZQ9oV_Qt-73">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="729.5735931288132" y="657.5735931288132" as="sourcePoint" />
             <mxPoint x="632.2999999999997" y="409.9999999999999" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;startArrow=classic;startFill=1;strokeColor=#878787;" edge="1" parent="1" source="vQHYAsxkU6DZZQ9oV_Qt-38">
-          <mxGeometry relative="1" as="geometry">
+        <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-76" value="&lt;font style=&quot;font-size: 12px ; line-height: 1&quot;&gt;OTP&lt;br&gt;&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;startArrow=classic;startFill=1;strokeColor=#878787;" edge="1" parent="1" source="vQHYAsxkU6DZZQ9oV_Qt-38">
+          <mxGeometry x="0.2407" relative="1" as="geometry">
             <mxPoint x="862" y="410" as="targetPoint" />
             <Array as="points">
               <mxPoint x="862" y="680" />
               <mxPoint x="862" y="410" />
             </Array>
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-13" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#6C8EBF;container=0;" vertex="1" parent="1">
-          <mxGeometry x="712" y="640" width="120" height="120" as="geometry" />
+          <mxGeometry x="717" y="640" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-14" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3E;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="1">
           <mxGeometry x="754.75" y="665.5" width="34.5" height="34.5" as="geometry" />
@@ -194,13 +195,7 @@
           <mxGeometry x="717" y="700" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-38" value="" style="shape=message;html=1;whiteSpace=wrap;html=1;outlineConnect=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="810" y="670" width="32" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-77" value="name, email, username, password" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=11;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="582.87" y="498" width="84.25" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="vQHYAsxkU6DZZQ9oV_Qt-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=11;startArrow=classic;startFill=1;strokeColor=#006600;" edge="1" parent="1" source="tGK0brASN7LOrKUB66ZN-31" target="vQHYAsxkU6DZZQ9oV_Qt-13">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="819" y="670" width="32" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
