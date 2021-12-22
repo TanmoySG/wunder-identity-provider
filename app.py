@@ -154,24 +154,6 @@ def register(user_data):
             users_list[user_data['username']] = user_init
             write_json(user, 'users.json')
 
-            cluster_data = {
-                "_cluster_id": cluster_id,
-                "access_tokens": tokens,
-                "databases":{}
-            }
-
-            cluster_init = {
-                "clusters" : {}
-            }
-
-            file = "./clusters/"+cluster_id+".json"
-
-            with open(file , 'w+' ) as json_file:
-                write_json(cluster_init, file)
-                data = json.load(json_file)
-                temp = data['clusters']
-                temp[cluster_id] = cluster_data
-                write_json(data, file)
             return jsonify({ 
                 "status_code" : '1',
                 "response" : "Cluster Created",
@@ -217,4 +199,4 @@ def login():
       
 @app.route("/")
 def main():
-    return "<h1>hweee</h1>"
+    return {"response" : "Welcome to AuthLib v2.0"}
