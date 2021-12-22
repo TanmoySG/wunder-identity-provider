@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-22T11:10:22.363Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="Rmug8ouniA9WjCF-BDoC" version="16.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-22T11:11:52.093Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="rEtW0K1wR7ISH8Mz-0dK" version="16.0.3" type="github">
   <diagram id="ZgDnklnv8hs0AD4zhIGA" name="Page-1">
     <mxGraphModel dx="1186" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -204,13 +204,13 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="734.8" y="516" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="735" y="550" />
-              <mxPoint x="777" y="550" />
+              <mxPoint x="735" y="520" />
+              <mxPoint x="777" y="520" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="dxptHCCob3W_Ypd7ssPJ-8" value="Token" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=14;fontColor=#0F0900;rotation=0;direction=west;horizontal=0;fontStyle=0;" vertex="1" parent="1">
-          <mxGeometry x="749" y="552" width="30" height="50" as="geometry" />
+        <mxCell id="dxptHCCob3W_Ypd7ssPJ-8" value="Token" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=13;fontColor=#0F0900;rotation=0;direction=west;horizontal=0;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="749" y="521" width="30" height="50" as="geometry" />
         </mxCell>
         <mxCell id="dxptHCCob3W_Ypd7ssPJ-12" value="&lt;b style=&quot;font-family: &amp;#34;work sans&amp;#34;&quot;&gt;Profile Verified and&amp;nbsp;Created&lt;/b&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;size=20.75;" vertex="1" parent="1">
           <mxGeometry x="669.42" y="449" width="130.75" height="40" as="geometry" />
