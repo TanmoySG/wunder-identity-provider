@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-24T20:21:32.697Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="vaFDMzyvaeuEpbWd9w4F" version="16.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-24T20:22:34.519Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="9MnEL0c5UNwgZNIsqycF" version="16.0.3" type="github">
   <diagram id="bcZGq8niX8jsSqBgnsz0" name="Page-1">
     <mxGraphModel dx="1694" dy="936" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -187,7 +187,7 @@
           <mxGeometry x="-57" y="800" width="215" height="30" as="geometry" />
         </mxCell>
         <mxCell id="okvVlNZ2xvB_8VoVdYBR-92" value="OTP, email, password" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=19;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="636.25" y="705" width="167.5" height="60" as="geometry" />
+          <mxGeometry x="598.13" y="690" width="243.75" height="35" as="geometry" />
         </mxCell>
         <mxCell id="okvVlNZ2xvB_8VoVdYBR-93" value="Tokens" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=19;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="940" y="720" width="167.5" height="30" as="geometry" />
@@ -197,6 +197,15 @@
         </mxCell>
         <mxCell id="okvVlNZ2xvB_8VoVdYBR-97" value="&lt;span style=&quot;color: rgb(51 , 51 , 51)&quot;&gt;User Authentication&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=19;fontColor=#82B366;rotation=0;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="187" y="826" width="215" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="okvVlNZ2xvB_8VoVdYBR-98" value="&lt;font style=&quot;font-size: 19px&quot;&gt;2&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="30" y="675" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="okvVlNZ2xvB_8VoVdYBR-99" value="&lt;font style=&quot;font-size: 19px&quot;&gt;3&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="730" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="okvVlNZ2xvB_8VoVdYBR-100" value="&lt;span style=&quot;color: rgb(51 , 51 , 51)&quot;&gt;User Authorization&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=19;fontColor=#82B366;rotation=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="730" y="776" width="215" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
