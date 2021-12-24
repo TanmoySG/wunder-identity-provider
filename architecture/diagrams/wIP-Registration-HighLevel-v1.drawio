@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-24T18:39:12.438Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="I_DmqRkflSAiMaBshse6" version="16.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-24T18:40:38.963Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="FLRQFl-Aj8ObK7tODWUE" version="16.0.3" type="github">
   <diagram id="bcZGq8niX8jsSqBgnsz0" name="Page-1">
-    <mxGraphModel dx="1248" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1248" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,15 +8,15 @@
           <mxGeometry x="280" y="459" width="690" height="102" as="geometry" />
         </mxCell>
         <mxCell id="pe7kV6N1swRoLj8WlCbN-1" value="&lt;font face=&quot;Work Sans&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Work+Sans&quot; style=&quot;line-height: 0.3&quot;&gt;&lt;b style=&quot;font-size: 17px&quot;&gt;uID Generator&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;[ 13/16 Digit Alpha-Numeric Unique ID ]&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="810" y="270" width="260" height="70" as="geometry" />
+          <mxGeometry x="790" y="223" width="260" height="70" as="geometry" />
         </mxCell>
         <mxCell id="pe7kV6N1swRoLj8WlCbN-2" value="&lt;font face=&quot;Work Sans&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Work+Sans&quot; style=&quot;line-height: 0.3&quot;&gt;&lt;b style=&quot;font-size: 17px&quot;&gt;Credential Processor&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;[ Check Email Format, Password Strength, Check if Email Exists, Prepare Payload ]&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="290" y="590" width="670" height="70" as="geometry" />
         </mxCell>
         <mxCell id="okvVlNZ2xvB_8VoVdYBR-1" value="&lt;font face=&quot;Work Sans&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Work+Sans&quot; style=&quot;line-height: 0.3&quot;&gt;&lt;b style=&quot;font-size: 17px&quot;&gt;Token Generator&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;[ Access Tokens for Accessing Services ]&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="790" y="167" width="260" height="70" as="geometry" />
+          <mxGeometry x="770" y="120" width="260" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="okvVlNZ2xvB_8VoVdYBR-2" value="&lt;font face=&quot;Work Sans&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Work+Sans&quot; style=&quot;line-height: 0.3&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Authentication Token Generator&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;[ 6-Digit OTP or Verification Link Generator ]&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="okvVlNZ2xvB_8VoVdYBR-2" value="&lt;font face=&quot;Work Sans&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Work+Sans&quot; style=&quot;line-height: 0.3&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Authentication Key Generator&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;[ 6-Digit OTP or Verification Link Generator ]&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="290" y="492" width="320" height="60" as="geometry" />
         </mxCell>
         <mxCell id="okvVlNZ2xvB_8VoVdYBR-4" value="&lt;font face=&quot;Work Sans&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Work+Sans&quot; style=&quot;line-height: 0.3&quot;&gt;&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;Authentication Mail&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;[ Send Auth. Mail with OTP/Link to the Email ]&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
@@ -25,14 +25,23 @@
         <mxCell id="okvVlNZ2xvB_8VoVdYBR-5" value="&lt;font face=&quot;Work Sans&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Work+Sans&quot; style=&quot;line-height: 0.3&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Register User to AuthLib&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;[ Add Email, Hashed Auth Token, Payload to AuthLib ]&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="290" y="260" width="320" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="okvVlNZ2xvB_8VoVdYBR-8" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;arcSize=7;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="70" y="140" width="150" height="220" as="geometry" />
+        <mxCell id="okvVlNZ2xvB_8VoVdYBR-23" value="&lt;font face=&quot;Work Sans&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Work+Sans&quot; style=&quot;line-height: 0.3&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Verify Authentication Key&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;[ Verify OTP or Verification Link ]&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="640" y="492" width="320" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="okvVlNZ2xvB_8VoVdYBR-9" value="AuthLib" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="1">
-          <mxGeometry x="114" y="147" width="60" height="20" as="geometry" />
+        <mxCell id="okvVlNZ2xvB_8VoVdYBR-28" value="User Authentication" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="545" y="466" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="okvVlNZ2xvB_8VoVdYBR-16" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="82" y="192" width="126" height="130" as="geometry" />
+        <mxCell id="okvVlNZ2xvB_8VoVdYBR-29" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="100" y="341" width="150" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="okvVlNZ2xvB_8VoVdYBR-8" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;arcSize=7;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="okvVlNZ2xvB_8VoVdYBR-29">
+          <mxGeometry width="150" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="okvVlNZ2xvB_8VoVdYBR-9" value="AuthLib" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="okvVlNZ2xvB_8VoVdYBR-29">
+          <mxGeometry x="44" y="7" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="okvVlNZ2xvB_8VoVdYBR-16" value="" style="group" vertex="1" connectable="0" parent="okvVlNZ2xvB_8VoVdYBR-29">
+          <mxGeometry x="12" y="52" width="126" height="130" as="geometry" />
         </mxCell>
         <mxCell id="okvVlNZ2xvB_8VoVdYBR-11" value="Email" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=14;size=10;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="okvVlNZ2xvB_8VoVdYBR-16">
           <mxGeometry y="90" width="126" height="40" as="geometry" />
@@ -45,12 +54,6 @@
         </mxCell>
         <mxCell id="okvVlNZ2xvB_8VoVdYBR-15" value="&lt;b&gt;Auth Profiles&lt;/b&gt;" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=14;size=10;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="okvVlNZ2xvB_8VoVdYBR-16">
           <mxGeometry width="126" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="okvVlNZ2xvB_8VoVdYBR-23" value="&lt;font face=&quot;Work Sans&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Work+Sans&quot; style=&quot;line-height: 0.3&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Verify Authentication Token&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;[ Verify OTP or Verification Link ]&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="640" y="492" width="320" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="okvVlNZ2xvB_8VoVdYBR-28" value="User Authentication" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=15;" vertex="1" parent="1">
-          <mxGeometry x="545" y="466" width="160" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
