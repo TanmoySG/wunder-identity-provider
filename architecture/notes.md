@@ -2,7 +2,7 @@
 
 _To be moved structured and documented in README going Forward_
 
-## Curios case of Login and the various Tokens
+## The Curious case of Login and the various Tokens
 
 **Problem** - Should I use Primary User Access token as global access token for all WPlat Services ? Or should I opt for a User Access Token - Service Admin Access Token - App Access token Model?
 
