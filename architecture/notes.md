@@ -1,6 +1,6 @@
 # Notes and Observations
 
-_To be moved structured and documented in README going Forward_
+_This is to be used only to document Ideas and interim rough thoughts. Information here is to be structured, moved and documented in README going Forward._
 
 ## The Curious case of Login and the various Tokens
 
