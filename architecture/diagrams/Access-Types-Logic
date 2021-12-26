@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-26T07:01:47.705Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="ajSzd8iVMqsbpuI55wPP" version="16.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-26T07:14:37.812Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="Js0mCz3wkZzggzMiv0a2" version="16.0.3" type="github">
   <diagram id="uqTa4cb4OLydeA1NKhq2" name="Page-1">
     <mxGraphModel dx="1186" dy="1055" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,12 +8,12 @@
           <mxGeometry x="30" y="480" width="560" height="30" as="geometry" />
         </mxCell>
         <mxCell id="447XwPQoS2ZeMkxGHgdk-17" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="40" y="-50" width="460" height="217" as="geometry" />
+          <mxGeometry x="40" y="-40" width="460" height="217" as="geometry" />
         </mxCell>
         <mxCell id="447XwPQoS2ZeMkxGHgdk-16" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;strokeWidth=1;arcSize=2;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-17">
           <mxGeometry y="11" width="460" height="206" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-2" value="Access Points/Platforms" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;glass=0;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-17">
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-2" value="Platforms" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;glass=0;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-17">
           <mxGeometry x="140" width="180" height="20" as="geometry" />
         </mxCell>
         <mxCell id="447XwPQoS2ZeMkxGHgdk-7" value="" style="group" vertex="1" connectable="0" parent="447XwPQoS2ZeMkxGHgdk-17">
@@ -52,50 +52,68 @@
         <mxCell id="447XwPQoS2ZeMkxGHgdk-13" value="User Created Clients" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-8">
           <mxGeometry x="35" y="127" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-18" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="470" y="200" width="460" height="217" as="geometry" />
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-40" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="40" y="200" width="691" height="216" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-19" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;strokeWidth=1;arcSize=2;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-18">
-          <mxGeometry y="11" width="460" height="206" as="geometry" />
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-19" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;strokeWidth=1;arcSize=2;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-40">
+          <mxGeometry y="10" width="691" height="206" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-20" value="Access Points/Platforms" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;glass=0;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-18">
-          <mxGeometry x="140" width="180" height="20" as="geometry" />
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-20" value="Access Points" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;glass=0;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-40">
+          <mxGeometry x="255" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-21" value="" style="group" vertex="1" connectable="0" parent="447XwPQoS2ZeMkxGHgdk-18">
-          <mxGeometry x="10" y="31" width="210" height="177" as="geometry" />
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-21" value="" style="group" vertex="1" connectable="0" parent="447XwPQoS2ZeMkxGHgdk-40">
+          <mxGeometry x="10" y="30" width="210" height="177" as="geometry" />
         </mxCell>
         <mxCell id="447XwPQoS2ZeMkxGHgdk-22" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fillColor=default;strokeColor=#FF8000;arcSize=1;dashed=1;strokeWidth=1;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-21">
           <mxGeometry y="17" width="210" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-23" value="Service Dashboards" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-21">
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-23" value="Account. Setting" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-21">
           <mxGeometry x="35" y="47" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-24" value="wunderPlatform Apps" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontStyle=1" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-21">
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-24" value="User Admin Access" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontStyle=1" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-21">
           <mxGeometry x="27.5" width="155" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-25" value="wunder CLI Tools" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-21">
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-25" value="wunder Admin Dash" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-21">
           <mxGeometry x="35" y="87" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-26" value="wunder Clients" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-21">
-          <mxGeometry x="35" y="127" width="140" height="30" as="geometry" />
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-26" value="Usage and other&lt;br&gt;Admin Platforms" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-21">
+          <mxGeometry x="35" y="127" width="140" height="33" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-27" value="" style="group" vertex="1" connectable="0" parent="447XwPQoS2ZeMkxGHgdk-18">
-          <mxGeometry x="240" y="31" width="210" height="177" as="geometry" />
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-27" value="" style="group" vertex="1" connectable="0" parent="447XwPQoS2ZeMkxGHgdk-40">
+          <mxGeometry x="240" y="30" width="210" height="177" as="geometry" />
         </mxCell>
         <mxCell id="447XwPQoS2ZeMkxGHgdk-28" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fillColor=none;strokeColor=#9933FF;arcSize=1;dashed=1;strokeWidth=1;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-27">
           <mxGeometry y="17" width="210" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-29" value="User Created Frontend" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-27">
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-29" value="Service Dashboard" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-27">
           <mxGeometry x="35" y="47" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-30" value="non-wunder Apps" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontStyle=1" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-27">
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-30" value="User Services Access" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontStyle=1" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-27">
           <mxGeometry x="27.5" width="155" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-31" value="App created by User" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-27">
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-31" value="Service Settings" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-27">
           <mxGeometry x="35" y="87" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-32" value="User Created Clients" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-27">
-          <mxGeometry x="35" y="127" width="140" height="30" as="geometry" />
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-32" value="Service-Specific Client" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-27">
+          <mxGeometry x="35" y="127" width="140" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-33" value="" style="group" vertex="1" connectable="0" parent="447XwPQoS2ZeMkxGHgdk-40">
+          <mxGeometry x="470" y="30" width="210" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-34" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fillColor=none;strokeColor=#FFCE9F;arcSize=1;dashed=1;strokeWidth=1;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-33">
+          <mxGeometry y="17" width="210" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-35" value="Data Consumer" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-33">
+          <mxGeometry x="35" y="47" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-36" value="Third-party Access" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontStyle=1" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-33">
+          <mxGeometry x="27.5" width="155" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-37" value="User dev-ed App" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-33">
+          <mxGeometry x="35" y="87" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-38" value="End-user of User Dev Services and Apps" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="447XwPQoS2ZeMkxGHgdk-33">
+          <mxGeometry x="35" y="127" width="140" height="33" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
