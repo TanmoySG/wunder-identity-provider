@@ -23,3 +23,5 @@ There can be multiple points of access - Admin (who owns the account), A Team Me
 There can also be multiple mediums of platforms of access - Access from the wunder Dashboard for wDB (an official wPlat Offering that might need some special access that a non-wPlat Service should not have) or Access from the ToDo app Admin created( that app doesn't require all features of wDB like wDash does, so different access)
 
 What Else ? [ Add new above ^ ]
+
+![Access-Types-Logic.jpg](https://github.com/TanmoySG/wunder-identity-provider/blob/dev/architecture/diagrams/Access-Types-Logic.jpg]
