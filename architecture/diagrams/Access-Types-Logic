@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-12-26T07:31:32.108Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="oC7kPFSucnJJiRkC--m1" version="16.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-26T07:32:20.334Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="x81tmyxMWqOEocUJhY5g" version="16.0.3" type="github">
   <diagram id="uqTa4cb4OLydeA1NKhq2" name="Page-1">
     <mxGraphModel dx="1586" dy="1055" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="447XwPQoS2ZeMkxGHgdk-14" value="&lt;b&gt;User&lt;/b&gt; - The person /team that owns the wPlat Account" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="1">
-          <mxGeometry x="200" y="450" width="560" height="30" as="geometry" />
+        <mxCell id="447XwPQoS2ZeMkxGHgdk-14" value="&lt;i&gt;- User&lt;/i&gt;&lt;i&gt; - The person /team that owns the wPlat Account&lt;/i&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="420" width="560" height="20" as="geometry" />
         </mxCell>
         <mxCell id="447XwPQoS2ZeMkxGHgdk-41" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="-120" y="180" width="691" height="220" as="geometry" />
