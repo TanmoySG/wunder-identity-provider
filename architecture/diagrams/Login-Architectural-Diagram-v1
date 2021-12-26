@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-26T20:34:38.012Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="cu5WirfKj1-jg-S9Y-2L" version="16.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-26T20:38:48.010Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="2TYptSSQN9b4A6lqdXu_" version="16.1.0" type="github">
   <diagram id="Os_XxW_Vq_oXxCiuqV0w" name="Page-1">
     <mxGraphModel dx="1483" dy="819" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -28,7 +28,7 @@
           <mxGeometry x="590" y="50" width="280" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LBVbgE990H81FZKclIxI-11" value="&lt;p style=&quot;line-height: 1.4&quot;&gt;&lt;b style=&quot;font-size: 13px&quot;&gt;App Access Token (ApAT)&amp;nbsp;&lt;br&gt;&lt;/b&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;[ User Authorized/Provisioned for Third-Party Access ]&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;strokeColor=#82b366;strokeWidth=1;fillColor=#d5e8d4;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry x="950" y="90" width="290" height="50" as="geometry" />
+          <mxGeometry x="943" y="154" width="290" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LBVbgE990H81FZKclIxI-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;fontColor=#395E58;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="LBVbgE990H81FZKclIxI-1" target="LBVbgE990H81FZKclIxI-21">
           <mxGeometry relative="1" as="geometry" />
@@ -45,22 +45,31 @@
         <mxCell id="LBVbgE990H81FZKclIxI-23" value="&lt;p style=&quot;line-height: 1.5&quot;&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;wunder Service Clients&lt;/b&gt;&lt;/font&gt;&lt;br&gt;[ Dashboard, Settings, CLI, etc ]&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="630" y="630" width="270" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="LBVbgE990H81FZKclIxI-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;" edge="1" parent="1" source="LBVbgE990H81FZKclIxI-24" target="LBVbgE990H81FZKclIxI-11">
+        <mxCell id="LBVbgE990H81FZKclIxI-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=12;fontColor=#395E58;startArrow=classic;startFill=1;" edge="1" parent="1" source="LBVbgE990H81FZKclIxI-24" target="LBVbgE990H81FZKclIxI-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LBVbgE990H81FZKclIxI-24" value="&lt;p style=&quot;line-height: 1.5&quot;&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;Third-Party Clients&lt;/b&gt;&lt;/font&gt;&lt;br&gt;[ Data Consumers, non-wunder Clients ]&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="950" y="190" width="270" height="70" as="geometry" />
+          <mxGeometry x="953" y="630" width="270" height="70" as="geometry" />
         </mxCell>
         <mxCell id="LBVbgE990H81FZKclIxI-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.081;exitY=-0.003;exitDx=0;exitDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=12;fontColor=#395E58;startArrow=none;startFill=0;exitPerimeter=0;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="LBVbgE990H81FZKclIxI-29">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="680" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="LBVbgE990H81FZKclIxI-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=12;fontColor=#395E58;startArrow=none;startFill=0;" edge="1" parent="1" source="LBVbgE990H81FZKclIxI-29" target="LBVbgE990H81FZKclIxI-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LBVbgE990H81FZKclIxI-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=12;fontColor=#395E58;startArrow=none;startFill=0;" edge="1" parent="1" source="LBVbgE990H81FZKclIxI-29" target="LBVbgE990H81FZKclIxI-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="LBVbgE990H81FZKclIxI-29" value="&lt;p style=&quot;line-height: 1.5&quot;&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;Service Engine&lt;/b&gt;&lt;/font&gt;&lt;br&gt;[ Engine/Server that runs the service ]&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="630" y="440" width="610" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="LBVbgE990H81FZKclIxI-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=12;fontColor=#395E58;startArrow=none;startFill=0;" edge="1" parent="1" source="LBVbgE990H81FZKclIxI-31" target="LBVbgE990H81FZKclIxI-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="LBVbgE990H81FZKclIxI-31" value="Data &amp;amp; Storage" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;dashed=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="1310" y="290" width="105" height="105" as="geometry" />
+          <mxGeometry x="1280" y="427.5" width="105" height="105" as="geometry" />
         </mxCell>
         <mxCell id="LBVbgE990H81FZKclIxI-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;fontColor=#395E58;startArrow=classic;startFill=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="LBVbgE990H81FZKclIxI-9" target="LBVbgE990H81FZKclIxI-37">
           <mxGeometry relative="1" as="geometry" />
@@ -88,9 +97,6 @@
         </mxCell>
         <mxCell id="LBVbgE990H81FZKclIxI-43" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#67AB9F;shadow=0;dashed=0;shape=mxgraph.ios7.icons.settings;rounded=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;fillColor=#d5e8d4;" vertex="1" parent="LBVbgE990H81FZKclIxI-49">
           <mxGeometry x="95.74000000000001" y="70" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="LBVbgE990H81FZKclIxI-61" value="adAT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;fontColor=#395E58;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="1100" y="620" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="LBVbgE990H81FZKclIxI-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=18;fontColor=#395E58;startArrow=none;startFill=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="LBVbgE990H81FZKclIxI-21" target="LBVbgE990H81FZKclIxI-40">
           <mxGeometry relative="1" as="geometry" />
@@ -130,6 +136,18 @@
         </mxCell>
         <mxCell id="LBVbgE990H81FZKclIxI-95" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-size: 13px&quot;&gt;Credentials&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=12;fontColor=#395E58;rotation=-90;" vertex="1" parent="1">
           <mxGeometry x="642.5" y="572.5" width="84" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="LBVbgE990H81FZKclIxI-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=12;fontColor=#395E58;startArrow=classic;startFill=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="LBVbgE990H81FZKclIxI-101" target="LBVbgE990H81FZKclIxI-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LBVbgE990H81FZKclIxI-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=12;fontColor=#395E58;startArrow=classic;startFill=1;" edge="1" parent="1" source="LBVbgE990H81FZKclIxI-101" target="LBVbgE990H81FZKclIxI-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LBVbgE990H81FZKclIxI-101" value="&lt;font face=&quot;Work Sans&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Work+Sans&quot; style=&quot;line-height: 0.3&quot;&gt;&lt;b style=&quot;font-size: 17px&quot;&gt;App Access Token Verification&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;[ Check if App Access Tokens Match ]&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="928" y="250" width="320" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LBVbgE990H81FZKclIxI-105" value="Data" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Work Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DWork%2BSans;fontSize=14;strokeColor=#82b366;fillColor=#d5e8d4;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="792" y="565" width="50" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
