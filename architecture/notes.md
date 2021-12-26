@@ -24,4 +24,4 @@ There can also be multiple mediums of platforms of access - Access from the wund
 
 What Else ? [ Add new above ^ ]
 
-![Access-Types-Logic.jpg](https://github.com/TanmoySG/wunder-identity-provider/blob/dev/architecture/diagrams/Access-Types-Logic.jpg]
+![](https://github.com/TanmoySG/wunder-identity-provider/blob/dev/architecture/diagrams/Access-Types-Logic.jpg)
