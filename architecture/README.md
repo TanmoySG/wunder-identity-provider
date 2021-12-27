@@ -95,6 +95,10 @@ Email is used as Primary Identifier for each user.
 }
 ```
 
+# Access Tokens Framework
+
+*Tracked in Issue #8*
+
 # Registration
 
 <img src="diagrams/wIP-Registration-HighLevel-v1.jpg" style="display: block;  margin-left: auto; margin-right: auto; width: 100%;" />
