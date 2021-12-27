@@ -121,3 +121,8 @@ Registration consists of two phases - `Phase #1 - Authentication` & `Phase #2 - 
 # Login
 
 <img src="diagrams/Login-Architectural-Diagram-v1.jpg" style="display: block;  margin-left: auto; margin-right: auto; width: 100%;" />
+
+
+### Notes and Observations
+
+Read the unconsolidated notes and observation [here](./notes.md).
