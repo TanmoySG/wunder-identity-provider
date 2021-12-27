@@ -4,7 +4,7 @@
 
 `wIP` provides a platform for managing access simply by hooking new services with existing Identity and profile in the system.
 
-The high-level architecture of `wIP` consists of two primary parts - Registration and Login. `wIP` does Authentication - of new Accounts and Authorization to End-Users and clients. 
+The high-level architecture of `wIP` consists of two primary parts - Registration and Login. `wunder Identity Provider` does both `Authentication` - of new Accounts and `Authorization` - to End-Users and clients. 
 
 ### Architecture
 
