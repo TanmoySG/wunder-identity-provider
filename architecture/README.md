@@ -12,9 +12,11 @@ The high-level architecture of `wIP` consists of two primary parts - Registratio
 
 
 
-# Identity Structure / Specification
+# Identity Specification
 
-## Identity Structure Specifications
+Identity Specification defines an User's Profile Speccification, uID, Tokens, etc. 
+
+## Identity Structure
 
 **Identifiers** - `email` (user provided) & `uID` (wIP Generated)
 
@@ -24,7 +26,7 @@ The high-level architecture of `wIP` consists of two primary parts - Registratio
 
 Identity Units are various information bits that are stored for each user. These are provided by the user.
 
-`Email` , `Name` , `Password` (hash)
+`Email` , `Name` , `Password` 
 
 ## Authentication Units
 
