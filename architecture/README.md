@@ -14,7 +14,7 @@ The high-level architecture of `wIP` consists of two primary parts - Registratio
 
 # Identity Specification
 
-*Tracked in [Issue #8](https://github.com/TanmoySG/wunder-identity-provider/issues/3)*
+*Tracked in [Issue #3](https://github.com/TanmoySG/wunder-identity-provider/issues/3)*
 
 Identity Specification defines an User's Profile Speccification, uID, Tokens, etc. 
 
