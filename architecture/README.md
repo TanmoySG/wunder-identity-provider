@@ -100,6 +100,15 @@ Email is used as Primary Identifier for each user.
 
 # Access Tokens Framework
 
+In the current wunderDB access-token system, we are using only one access token for all access - Admin Access, Service Access and App/Third-Party Client Access. This poses a serious fault that doesn't allow different levels of separation of access for different actions. The goal is to prepare a Multi-Token Multi-Level Access Token Framework for accessing different sections and actions in wPlat.
+
+For use-case and intetion behind the Access Tokens Framework refer to [The Curious case of Login and the various Tokens](https://github.com/TanmoySG/wunder-identity-provider/blob/dev/architecture/notes.md#the-curious-case-of-login-and-the-various-tokens) in the Notes and Observations documenting the rough idea and intent behind the framework.
+
+In this framework we'd be using three different Tokens - `Admin Access Token` , `Service Access Token` & `App Access Tokens`. The Use cases of each tokens are shown here -
+
+![](https://github.com/TanmoySG/wunder-identity-provider/blob/dev/architecture/diagrams/Access-Types-Logic.jpg)
+
+
 *Tracked in [Issue #8](https://github.com/TanmoySG/wunder-identity-provider/issues/8)*
 
 
