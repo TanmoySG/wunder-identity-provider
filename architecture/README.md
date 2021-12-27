@@ -4,11 +4,13 @@
 
 `wIP` provides a platform for managing access simply by hooking new services with existing Identity and profile in the system.
 
-## Architecture
+The high-level architecture of `wIP` consists of two primary parts - Registration and Login. `wIP` does Authentication - of new Accounts and Authorization to End-Users and clients. 
+
+### Architecture
 
 <img src="diagrams/WIP-Architectural-Diagram-v2.jpg" style="display: block;  margin-left: auto; margin-right: auto; width: 100%;" />
 
-The high-level architecture of `wIP` consists of two primary parts - Registration and Login. `wIP` does Authentication - of new Accounts and Authorization to End-Users and clients. 
+
 
 # Registration
 
