@@ -114,6 +114,8 @@ In this framework we'd be using three different Tokens - `Admin Access Token` , 
 
 # Registration
 
+Registration consists of two phases - `Phase #1 - Authentication` & `Phase #2 - Authorization`
+
 <img src="diagrams/wIP-Registration-HighLevel-v1.jpg" style="display: block;  margin-left: auto; margin-right: auto; width: 100%;" />
 
 # Login
