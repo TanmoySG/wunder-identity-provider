@@ -145,6 +145,8 @@ Upon receiving the OTP, the user needs to send an `Authorization` Request with t
 
 <img src="diagrams/wIP-Registration-HighLevel-v1.jpg" style="display: block;  margin-left: auto; margin-right: auto; width: 100%;" />
 
+*Tracked in [Issue #3](https://github.com/TanmoySG/wunder-identity-provider/issues/3)*
+
 # Login
 
 <img src="diagrams/Login-Architectural-Diagram-v1.jpg" style="display: block;  margin-left: auto; margin-right: auto; width: 100%;" />
