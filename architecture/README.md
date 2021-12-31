@@ -114,7 +114,34 @@ In this framework we'd be using three different Tokens - `Admin Access Token` , 
 
 # Registration
 
-Registration consists of two phases - `Phase #1 - Authentication` & `Phase #2 - Authorization`
+Registration consists of two phases - `Phase #1 - Authentication` & `Phase #2 - Authorization` 
+
+### Phase #1 - Authentication 
+
+User registration starts with Authentication. A new user is on-boarded by passing their Email to wIP. In response to the registration request, an `One-Time Password or OTP` is generated and sent to the user via e-mail. The Email address and other required data, in form of Payload is registered to the `AuthLib` - which stores all Verification Request details.
+
+```
+{
+  "email" : <email of new user>
+}
+```
+
+### Phase #2 - Authorization
+
+Upon receiving the OTP, the user needs to send an `Authorization` Request with the OTP and other user information. The OTP is cross-checked/verified from thr AuthLib. Once, verified, the User profile from `AuthLib` Payload is registered as a Verified Profile in wIP. 
+
+```
+{
+  "email" : <email>,
+  "otp" : <OTP>,
+  ...
+}
+```
+
+### AuthLib - a Secondary Authorization and Authentication storage
+
+`AuthLib` serves as a secondary storage layer of information, required for Authentication and authorization - before Authentication. AuthLib helps in storing information while it is still un -verified , taking off load from the main Identity Profiles, by providing an extra layer of storage, an intermediate one.
+
 
 <img src="diagrams/wIP-Registration-HighLevel-v1.jpg" style="display: block;  margin-left: auto; margin-right: auto; width: 100%;" />
 
