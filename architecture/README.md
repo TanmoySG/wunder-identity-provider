@@ -149,6 +149,22 @@ Upon receiving the OTP, the user needs to send an `Authorization` Request with t
 
 # Login
 
+Account Config, Settings and other Admin-Level User Information are confidential and of Highest importance. These informations are stored seperate from any data. These informations are also required to be highly secured and accessible only to the User (Account Owner). This information is accessible only through the `Admin Access Token` to only Authorized, wunder Clients like CLI tool or Wunder Control Centre, etc. 
+
+Service level Config, settings and data are stored in Service Level Storage. While Service-Stored Data access is subject to wunder-made client and User-made/Third-Party clients, Service Configurations and special data actions (eg delete, truncate, etc.) should only be accessible to wunder-made clients. To facilitate this, separate access tokens - `Service Access Token` and `App Access Tokens` are used in wIP.
+
+### Admin Access Token - `AdAT`
+
+`Admin Access Tokens` are used to access the Admin Level Setting, Configurations and Informations. This Access Token ios only used by wunder made - admin panels and clients like the wunder Control Panel and not be used by any other clients. The user needs to request for access by passing the credentials to the wunder-control-panel which relays the credentials to the wIP Access Resolver. In response the Access Resolver send the `AdAT` to the client, which is usable by the client only but not viewable to the User. This token is only used by the client to access and show the user the data from the User Data Storage. 
+
+### Service Access Token - `SAT`
+
+Service level Access also uses credentials passed the `Service Engine` relayed to `wIP Access Resolver` to get the the `SAT` using which the Service-Specific Client (wunder-made) can perform certain Admin-level operations on data (eg delete, truncate, etc.) as well as can configure and manipulate the admin-level service settings. This token too is usable only by the wunder-made Service Clients and not viewable to the user - only data/config is accesible and viewable.
+
+### App Access Tokens - `ApAT`
+
+App Access tokens work opposite to the other too tokens. Unlike `AdAT` and `SAT` were not accessible/viewable to the user and were only visible to the client, `ApAT` is generated for the user to view and use to connect to the service via a third-party applications developed by the User. The third-party application/client passes the `ApAT` assigned specifically to that client to the Service Engine to verify and establish a connection. The App Tokens are matched and if found correct a `Successful Connection` message that helps the third party client to access the data. While `ApAT` is used to connect and perform operations on the data, ApAT cannot be used to perform certain admin level actions.
+
 <img src="diagrams/Login-Architectural-Diagram-v1.jpg" style="display: block;  margin-left: auto; margin-right: auto; width: 100%;" />
 
 
