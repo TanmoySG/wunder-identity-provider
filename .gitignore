@@ -135,3 +135,4 @@ server-config.json
 users.json
 templates.json
 /test
+dataFiles/authLibProfiles.db
