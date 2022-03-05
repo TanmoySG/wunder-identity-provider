@@ -29,7 +29,16 @@ What Else ? [ Add new above ^ ]
 
 # Data Files - Notes
 
-- `authLibProfiles`
+- `authLibProfiles_dev` - for Dev and Test. To be moved to production db `authLibProfiles`
+    - uid
+    - email - primary identifier
+    - timestamp
+    - latestHashedOTP - find a string concat and hash
+    - status
+    - (maybe) payload
+    - anything else (To be added while dev and test)
+
+- `authLibProfiles` - for Production
     - uid
     - email - primary identifier
     - timestamp
