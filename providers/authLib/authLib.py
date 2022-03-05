@@ -1,19 +1,18 @@
 '''
-Test Code - Will be changed later.
+
 '''
 import sqlite3 as sql
 
-db = sql.connect("dataFiles/authLibProfiles.db")
+db = sql.connect("dataFiles/test.db")
 
 cursor = db.cursor()
 
-cursor.execute("CREATE TABLE authProfilesTest (id TEXT, name TEXT)")
-cursor.execute("INSERT INTO authProfilesTest VALUES  ('1', 'T')")
-cursor.execute("INSERT INTO authProfilesTest VALUES  ('2', 'S')")
+cursor.execute("INSERT INTO testTable2 VALUES  (1, 'P')")
+cursor.execute("INSERT INTO testTable2 VALUES  (2, 'S')")
 
 db.commit()
 
-for row in cursor.execute('SELECT * FROM authProfilesTest'):
-    print(row)
+for row in cursor.execute('SELECT * FROM testTable2'):
+    print(row[0])
 
 db.close()

@@ -25,3 +25,15 @@ There can also be multiple mediums of platforms of access - Access from the wund
 What Else ? [ Add new above ^ ]
 
 ![](https://github.com/TanmoySG/wunder-identity-provider/blob/dev/architecture/diagrams/Access-Types-Logic.jpg)
+
+
+# Data Files - Notes
+
+- `authLibProfiles`
+    - uid
+    - email - primary identifier
+    - timestamp
+    - latestHashedOTP - find a string concat and hash
+    - status
+    - (maybe) payload
+    - anything else (To be added while dev and test)
