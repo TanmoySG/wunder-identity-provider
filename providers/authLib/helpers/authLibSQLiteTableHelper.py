@@ -5,7 +5,7 @@ db = sql.connect("dataFiles/authLibProfiles_dev.db")
 
 cursor = db.cursor()
 
-# Create authProfiles Table in Test.
+# Create authProfiles Table in Test. SQL Statement
 CREATE_TABLE_SQL_STATEMENT = '''
     CREATE TABLE IF NOT EXISTS authProfiles (
         uID TEXT,
