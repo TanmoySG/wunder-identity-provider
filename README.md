@@ -10,4 +10,5 @@ The Architectural and Design details are documented [here](./architecture/README
 
 The Identity of a User is uniquely defined (primarily) by the user's email ID, while the uID (system generated) and username (user defined) are used for secondary and tertiary identification. The (rough) ID Structure, that is stored and used can be found [here](./architecture/README.md#identity-specification). 
 
-## Usage - 
+## Usage 
+
