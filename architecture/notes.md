@@ -46,3 +46,14 @@ What Else ? [ Add new above ^ ]
     - status
     - (maybe) payload
     - anything else (To be added while dev and test)
+
+
+# OTP Architecture
+
+[ OTP Verification Subsystem ]
+
+![OTP-Subsystem](./diagrams/OTP-SubSystem.jpg)
+
+# Future
+
+- Goal is to replace `authlib`in the future and enable profiles-level verification and remove intermediate step [Plan TBD]
