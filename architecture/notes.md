@@ -25,3 +25,43 @@ There can also be multiple mediums of platforms of access - Access from the wund
 What Else ? [ Add new above ^ ]
 
 ![](https://github.com/TanmoySG/wunder-identity-provider/blob/dev/architecture/diagrams/Access-Types-Logic.jpg)
+
+
+# Data Files - Notes
+
+- `authLibProfiles_dev` - for Dev and Test. To be moved to production db `authLibProfiles`
+    - uid
+    - email - primary identifier
+    - timestamp
+    - latestHashedOTP - find a string concat and hash
+    - status
+    - (maybe) payload
+    - anything else (To be added while dev and test)
+
+- `authLibProfiles` - for Production
+    - uid
+    - email - primary identifier
+    - timestamp
+    - latestHashedOTP - find a string concat and hash
+    - status
+    - (maybe) payload
+    - anything else (To be added while dev and test)
+
+
+# OTP Architecture
+
+[ OTP Verification Subsystem ]
+
+![OTP-Subsystem](./diagrams/OTP-SubSystem.jpg)
+
+[ Notes ]
+
+- Shall use Time-based OTP Algorithm, w/o Google-auth.
+- Enable Magic-link based authentication (integrated with OTP SubSys)
+- Shall send OTP to Mail 
+- Alpha Numeric OTP - 6 Digit, prep.
+- _TBD_
+
+# Future
+
+- Goal is to replace `authlib`in the future and enable profiles-level verification and remove intermediate step [Plan TBD]
