@@ -54,6 +54,14 @@ What Else ? [ Add new above ^ ]
 
 ![OTP-Subsystem](./diagrams/OTP-SubSystem.jpg)
 
+[ Notes ]
+
+- Shall use Time-based OTP Algorithm, w/o Google-auth.
+- Enable Magic-link based authentication (integrated with OTP SubSys)
+- Shall send OTP to Mail 
+- Alpha Numeric OTP - 6 Digit, prep.
+- _TBD_
+
 # Future
 
 - Goal is to replace `authlib`in the future and enable profiles-level verification and remove intermediate step [Plan TBD]
