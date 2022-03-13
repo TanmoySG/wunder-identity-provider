@@ -7,20 +7,30 @@ cursor = db.cursor()
 
 # Create authProfiles Table in Test. SQL Statement
 CREATE_TABLE_SQL_STATEMENT = '''
-    CREATE TABLE IF NOT EXISTS authProfiles (
-        uID TEXT,
-        email TEXT,
-        timestamp TEXT,
-        latestOTPHash TEXT,
-        status TEXT
+    DROP TABLE authProfiles_dev
+'''
+
+cursor.execute(CREATE_TABLE_SQL_STATEMENT)
+
+CREATE_TABLE_SQL_STATEMENT = '''
+    CREATE TABLE IF NOT EXISTS authProfiles_dev (
+        email TEXT NOT NULL,
+        authRequestID TEXT,
+        name TEXT,
+        passwordHash TEXT,
+        hashedSecret TEXT,
+        status TEXT,
+        PRIMARY KEY (email)
     )
 '''
 
 cursor.execute(CREATE_TABLE_SQL_STATEMENT)
 
+# Commit Changes to DB
 db.commit()
 
-for row in cursor.execute('SELECT COUNT(*) FROM authProfiles'):
+# Count Rows
+for row in cursor.execute('SELECT COUNT(*) FROM authProfiles_dev'):
     print(row)
 
 db.close()
