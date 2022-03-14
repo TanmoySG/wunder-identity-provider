@@ -31,8 +31,4 @@ cursor.execute(CREATE_TABLE_SQL_STATEMENT)
 db.commit()
 
 # Log to console
-
-log().SUCCESS("DB Created")
-# _timestamp = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-
-# print(f"[{_timestamp}] INFO : authProfiles_dev Table Created! ")
+log().SUCCESS("Dev Table Created!")
