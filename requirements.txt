@@ -9,4 +9,5 @@ Jinja2==3.0.3
 MarkupSafe==2.0.1
 shortuuid==1.0.8
 six==1.16.0
+termcolor==1.1.0
 Werkzeug==2.0.2

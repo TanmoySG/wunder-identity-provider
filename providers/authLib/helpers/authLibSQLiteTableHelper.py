@@ -1,5 +1,4 @@
 import sqlite3 as sql
-import datetime
 
 # Connecting to DEV authLib Table
 db = sql.connect("dataFiles/authLibProfiles_dev.db")
@@ -31,6 +30,7 @@ cursor.execute(CREATE_TABLE_SQL_STATEMENT)
 db.commit()
 
 # Log to console
-_timestamp = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
-print(f"[{_timestamp}] INFO : authProfiles_dev Table Created! ")
+# _timestamp = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+
+# print(f"[{_timestamp}] INFO : authProfiles_dev Table Created! ")
