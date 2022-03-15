@@ -31,4 +31,7 @@ cursor.execute(CREATE_TABLE_SQL_STATEMENT)
 db.commit()
 
 # Log to console
-log().SUCCESS("Dev Table Created!")
+log = log()
+log.configure(console_only=True, ENV="Dev")
+
+log.SUCCESS("Auth Profiles Table Created!")
