@@ -52,7 +52,7 @@ def generate_mail(recipient, mode, payload="none"):
             "replacement_string": payload["otp"]
         }
 
-        send_mail(recipient, "otp_generation_template.txt", content)
+        send_mail(recipient, "emailTemplates/otp_generation_template.html", content)
 
     elif mode=="verified-otp-mail":
         content = {
@@ -60,7 +60,7 @@ def generate_mail(recipient, mode, payload="none"):
             "replacement_token": "%user%",
             "replacement_string": recipient
         }
-        send_mail(recipient, "otp_verified_template.txt", content)
+        send_mail(recipient, "emailTemplates/otp_verified_template.html", content)
 
 
 def create_new_request(mail, otp):
