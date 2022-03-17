@@ -6,4 +6,4 @@ print(_OTP)
 
 _CURRENT_TIMESTAMP = TIMESTAMP().generate()
 
-print(_CURRENT_TIMESTAMP)
+print(_CURRENT_TIMESTAMP[0])
