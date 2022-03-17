@@ -21,7 +21,7 @@ class OTP:
         return self.OTP
 
 
-# TIMESTAMP(s) Gnerator Class
+# TIMESTAMP Generator Class
 class TIMESTAMP:
 
     def __init__(self) -> None:
