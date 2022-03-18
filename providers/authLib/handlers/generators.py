@@ -23,7 +23,7 @@ class OTP:
         return self.OTP
 
 
-# TIMESTAMP Generator Class
+# TIMESTAMP Generator 
 class TIMESTAMP:
 
     def __init__(self) -> None:
@@ -42,7 +42,7 @@ class TIMESTAMP:
         return self.timestamp_frame
 
 
-# Request UUID Generator
+# Request ID Generator 
 class UUID:
 
     def __init__(self) -> None:
