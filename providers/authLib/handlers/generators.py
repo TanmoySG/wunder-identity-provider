@@ -1,6 +1,7 @@
 import string
 import random
 import datetime
+import uuid
 
 
 # OTP Generator Class
@@ -10,6 +11,7 @@ class OTP:
         self.OTP = ""
 
     def generate(self, length) -> str:
+        # length - Length of OTP
         self.OTP = ''.join(
             random.choices(
                 string.ascii_uppercase
@@ -27,15 +29,25 @@ class TIMESTAMP:
     def __init__(self) -> None:
         self.current_datetime = datetime.datetime.now(tz=datetime.timezone.utc)
 
-    def timestamp_range(self):
-        return [
+    def generate(self, timeframe):
+        # timeframe - OTP Validity Timeframe in Second
+        self.timestamp_frame = [
             str(
                 datetime.datetime.timestamp(
                     self.current_datetime + datetime.timedelta(seconds=i)
                 )
-            ).split(".")[0] for i in range(0, 90)
+            ).split(".")[0] for i in range(0, timeframe)
         ]
 
-    def generate(self):
-        self.timestamp_frame = self.timestamp_range()
         return self.timestamp_frame
+
+
+# Request UUID Generator
+class UUID:
+
+    def __init__(self) -> None:
+        self.unique_id =""
+
+    def generate(self):
+        self.unique_id = uuid.uuid4()
+        return self.unique_id
