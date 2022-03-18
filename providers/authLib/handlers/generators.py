@@ -1,3 +1,4 @@
+import hashlib
 import string
 import random
 import datetime
@@ -23,7 +24,7 @@ class OTP:
         return self.OTP
 
 
-# TIMESTAMP Generator 
+# TIMESTAMP Generator
 class TIMESTAMP:
 
     def __init__(self) -> None:
@@ -42,12 +43,39 @@ class TIMESTAMP:
         return self.timestamp_frame
 
 
-# Request ID Generator 
+# Request ID Generator
 class UUID:
 
     def __init__(self) -> None:
-        self.unique_id =""
+        self.unique_id = ""
 
     def generate(self):
         self.unique_id = uuid.uuid4()
         return self.unique_id
+
+
+# SECRET Generator
+class HASH_SECRET:
+
+    def __init__(self) -> None:
+        self.secrets = []
+        pass
+
+    def generate(self, OTP, TIMESTAMPS):
+        if type(TIMESTAMPS) == list:
+            for timestamp in TIMESTAMPS:
+                secret = f"{timestamp}/{OTP}"
+                self.secrets.append(
+                    hashlib.sha256(
+                        secret.encode("utf-8")
+                    ).hexdigest()
+                )
+        elif type(TIMESTAMPS) == str:
+            secret = f"{TIMESTAMP}/{OTP}"
+            self.secrets = hashlib.sha256(
+                secret.encode("utf-8")
+            ).hexdigest()
+        else:
+            raise TypeError("TIMESTAMP Type doesn't match.")
+
+        return self.secrets
