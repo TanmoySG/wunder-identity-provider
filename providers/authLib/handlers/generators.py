@@ -4,7 +4,7 @@ import datetime
 import uuid
 
 
-# OTP Generator Class
+# OTP Generator
 class OTP:
 
     def __init__(self):
