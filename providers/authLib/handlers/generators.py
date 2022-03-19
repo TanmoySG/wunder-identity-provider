@@ -71,7 +71,7 @@ class HASH_SECRET:
                     ).hexdigest()
                 )
         elif type(TIMESTAMPS) == str:
-            secret = f"{TIMESTAMP}/{OTP}"
+            secret = f"{TIMESTAMPS}/{OTP}"
             self.secrets = hashlib.sha256(
                 secret.encode("utf-8")
             ).hexdigest()
