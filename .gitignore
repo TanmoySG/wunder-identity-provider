@@ -136,3 +136,4 @@ users.json
 templates.json
 /test
 dataFiles/authLibProfiles.db
+.vscode/

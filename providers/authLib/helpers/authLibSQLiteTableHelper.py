@@ -32,6 +32,6 @@ db.commit()
 
 # Log to console
 log = log()
-log.configure(console_only=True, ENV="Dev")
+log.configure(console_only=False, ENV="Dev", logfile="logs")
 
 log.SUCCESS("Auth Profiles Table Created!")
