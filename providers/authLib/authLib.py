@@ -1,18 +1,8 @@
-'''
+from handlers.requestHandler import AUTH_REQUEST
 
-'''
-import sqlite3 as sql
+email_id = "tanmoysps@gmail.com"
+name="TSg"
+pw="123454"
 
-db = sql.connect("dataFiles/test.db")
+AUTH_REQUEST().register(mailID=email_id, name=name, password=pw)
 
-cursor = db.cursor()
-
-cursor.execute("INSERT INTO testTable2 VALUES  (1, 'P')")
-cursor.execute("INSERT INTO testTable2 VALUES  (2, 'S')")
-
-db.commit()
-
-for row in cursor.execute('SELECT * FROM testTable2'):
-    print(row[0])
-
-db.close()

@@ -51,7 +51,7 @@ class UUID:
 
     def generate(self):
         self.unique_id = uuid.uuid4()
-        return self.unique_id
+        return self.unique_id.hex
 
 
 # SECRET Generator
