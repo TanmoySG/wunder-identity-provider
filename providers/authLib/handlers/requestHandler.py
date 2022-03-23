@@ -73,6 +73,12 @@ class AUTH_REQUEST:
             verifiable_secrets = HASH_SECRET().generate(OTP=verification_OTP, TIMESTAMPS=verifiable_timeframe)
 
             if hashed_verification_secret in verifiable_secrets:
+                del authlib[verification_mail]
+                write_json(authlib, configurations["authlib_store"])
                 log.SUCCESS("Verified")
+
+                # This is a placeholder code - Will be changed later
+                return "ID Will be returned. And a Post-Success Action will be called here."
             else:
                 log.FAILURE("Failed")
+                return "Failed"
