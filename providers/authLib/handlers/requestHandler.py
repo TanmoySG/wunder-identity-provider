@@ -41,7 +41,7 @@ class AUTH_REQUEST:
         self._OTP = OTP().generate(length=6)
         self._REQUEST_TIME = datetime.datetime.now(tz=datetime.timezone.utc)
 
-        with open(configurations["authlib_store"]) as authlibObject:
+        with open(configurations["authlib-store"]) as authlibObject:
             authlib = json.load(authlibObject)
             if mailID not in authlib.keys():
                 authlib[mailID] = AUTH_PROFILE().create_profile(
@@ -52,7 +52,7 @@ class AUTH_REQUEST:
                     secret=hashlib.md5(self._OTP.encode("UTF-8")).hexdigest(),
                     password=password
                 )
-                write_json(authlib, configurations["authlib_store"])
+                write_json(authlib, configurations["authlib-store"])
                 log.INFO("Registered")
                 return self._OTP
             else:
@@ -60,7 +60,7 @@ class AUTH_REQUEST:
                 return self._OTP
 
     def verify(self, verification_mail, verification_OTP):
-        with open(configurations["authlib_store"]) as authlibObject:
+        with open(configurations["authlib-store"]) as authlibObject:
             authlib=json.load(authlibObject)
             verification_profile = authlib[verification_mail]
 
@@ -69,12 +69,12 @@ class AUTH_REQUEST:
             hashed_verification_secret = HASH_SECRET().generate(OTP=verification_OTP, TIMESTAMPS=current_timestamp[0])
 
             # Dynamic Secret list creation for Request Timestamp till verifiable time frame (90s here)
-            verifiable_timeframe = TIMESTAMP().generate(timeframe=configurations["otp_verification_window"], initTime=verification_profile["requestTimestamp"])
+            verifiable_timeframe = TIMESTAMP().generate(timeframe=configurations["otp-verification-window"], initTime=verification_profile["requestTimestamp"])
             verifiable_secrets = HASH_SECRET().generate(OTP=verification_OTP, TIMESTAMPS=verifiable_timeframe)
 
             if hashed_verification_secret in verifiable_secrets:
                 del authlib[verification_mail]
-                write_json(authlib, configurations["authlib_store"])
+                write_json(authlib, configurations["authlib-store"])
                 log.SUCCESS("Verified")
 
                 # This is a placeholder code - Will be changed later
