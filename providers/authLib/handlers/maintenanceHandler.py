@@ -23,11 +23,13 @@ class MAINTENANCE:
     __authlib = {}
 
     def __init__(self) -> None:
-        with open(configurations["authlib-store"]) as authlibObject:
-            self.__authlib = json.load(authlibObject)
+        pass
 
     # Purge Un-verified AuthLib Profiles with over [60]-Days of Activity
     def long_term_purge(self):
+        with open(configurations["authlib-store"]) as authlibObject:
+            self.__authlib = json.load(authlibObject)
+
         for mail_id in list(self.__authlib):
             self.requestTimestamp = datetime.datetime.fromisoformat(self.__authlib[mail_id]["requestTimestamp"])
             self.currentTimestamp = datetime.datetime.now(tz=datetime.timezone.utc)
@@ -41,6 +43,20 @@ class MAINTENANCE:
                 pass
 
     # Delete the Hashed Secret and Timestamp of Request 
-    def short_term_purge():
+    def short_term_purge(self):
+        with open(configurations["authlib-store"]) as authlibObject:
+            self.__authlib = json.load(authlibObject)
 
+        for mail_id in list(self.__authlib):
+            self.requestTimestamp = datetime.datetime.fromisoformat(self.__authlib[mail_id]["requestTimestamp"])
+            self.currentTimestamp = datetime.datetime.now(tz=datetime.timezone.utc)
+
+            self.timespan = self.currentTimestamp - self.requestTimestamp
+            
+            if self.timespan.days >= configurations["short-term-purge-timespan"]:
+                self.__authlib[mail_id]["hashedSecret"] = ""
+                self.__authlib[mail_id]["requestTimestamp"] = ""
+                write_json(self.__authlib, configurations["authlib-store"])
+            else:
+                pass
         pass

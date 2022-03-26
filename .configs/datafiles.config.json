@@ -2,5 +2,5 @@
     "authlib-store" : "dataFiles/authlib.json",
     "otp-verification-window" : 90,
     "long-term-purge-timespan" : 60,
-    "short-term-purge-timespan" : 0
+    "short-term-purge-timespan" : 2
 }
