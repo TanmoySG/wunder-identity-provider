@@ -2,7 +2,7 @@ from time import sleep
 from handlers.requestHandler import AUTH_REQUEST
 from handlers.maintenanceHandler import MAINTENANCE
 
-MAINTENANCE().long_term_purge()
+MAINTENANCE().short_term_purge()
 
 # Eg - In-time verification - should successfully verify account
 email_id = "random1@gmail.com"

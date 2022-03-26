@@ -59,10 +59,32 @@ class AUTH_REQUEST:
                 log.WARN("Mail Exists")
                 return self._OTP
 
+    def regenerate_profile(self, mailID):
+        self._OTP = OTP().generate(length=6)
+        self._REQUEST_TIME = datetime.datetime.now(tz=datetime.timezone.utc)
+
+        with open(configurations["authlib-store"]) as authlibObject:
+            authlib=json.load(authlibObject)
+
+            authlib[mailID]["requestTimestamp"] = str(self._REQUEST_TIME)
+            authlib[mailID]["hashedSecret"] = hashlib.md5(self._OTP.encode("UTF-8")).hexdigest()
+
+            write_json(authlib, configurations["authlib-store"])
+
+            return "OTP Re-generated"
+
+
     def verify(self, verification_mail, verification_OTP):
         with open(configurations["authlib-store"]) as authlibObject:
             authlib=json.load(authlibObject)
+
+            if verification_mail not in authlib.keys():
+                return "Return something" # Change Later
+
             verification_profile = authlib[verification_mail]
+
+            if verification_profile["hashedSecret"] == "" and verification_profile["requestTimestamp"] == "" :
+                return self.regenerate_profile(mailID=verification_mail)
 
             # Generate Secret for Current Timestamp
             current_timestamp = TIMESTAMP().generate(timeframe=1)
