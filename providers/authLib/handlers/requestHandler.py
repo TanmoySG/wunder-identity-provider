@@ -71,7 +71,7 @@ class AUTH_REQUEST:
 
             write_json(authlib, configurations["authlib-store"])
 
-            return "OTP Re-generated"
+            return self._OTP
 
 
     def verify(self, verification_mail, verification_OTP):
@@ -84,8 +84,11 @@ class AUTH_REQUEST:
             verification_profile = authlib[verification_mail]
 
             if verification_profile["hashedSecret"] == "" and verification_profile["requestTimestamp"] == "" :
-                return self.regenerate_profile(mailID=verification_mail)
+                return "OTP Regenerated", self.regenerate_profile(mailID=verification_mail)
 
+            if hashlib.md5(verification_OTP.encode("UTF-8")).hexdigest() != verification_profile["hashedSecret"]:
+                return "Incorrect OTP", {}
+            
             # Generate Secret for Current Timestamp
             current_timestamp = TIMESTAMP().generate(timeframe=1)
             hashed_verification_secret = HASH_SECRET().generate(OTP=verification_OTP, TIMESTAMPS=current_timestamp[0])
@@ -94,13 +97,12 @@ class AUTH_REQUEST:
             verifiable_timeframe = TIMESTAMP().generate(timeframe=configurations["otp-verification-window"], initTime=verification_profile["requestTimestamp"])
             verifiable_secrets = HASH_SECRET().generate(OTP=verification_OTP, TIMESTAMPS=verifiable_timeframe)
 
+            
             if hashed_verification_secret in verifiable_secrets:
+                profile = authlib[verification_mail]
                 del authlib[verification_mail]
                 write_json(authlib, configurations["authlib-store"])
-                log.SUCCESS("Verified")
-
-                # This is a placeholder code - Will be changed later
-                return "ID Will be returned. And a Post-Success Action will be called here."
+                return profile
             else:
-                log.FAILURE("Failed")
-                return "Failed"
+                regenerated_otp = self.regenerate_profile(mailID=verification_mail)
+                return "Expired OTP", regenerated_otp
