@@ -1,38 +1,14 @@
-# from time import sleep
-# from handlers.requestHandler import AUTH_REQUEST
-# from handlers.maintenanceHandler import MAINTENANCE
-
-# MAINTENANCE().short_term_purge()
-
-# # Eg - In-time verification - should successfully verify account
-# email_id = "random1@gmail.com"
-# name="Jane Doe"
-# pw="123454"
-
-# _otp=AUTH_REQUEST().register(mailID=email_id, name=name, password=pw)
-
-# sleep(5)
-
-# returrn_val = AUTH_REQUEST().verify(verification_mail=email_id, verification_OTP=_otp)
-
-# #placeholder code
-# print(returrn_val)
-
-# # Eg - Out-of timeframe/window verification - Should Fail
-# email_id = "random2@gmail.com"
-# name="Jane Doe"
-# pw="123454"
-
-# _otp=AUTH_REQUEST().register(mailID=email_id, name=name, password=pw)
-# sleep(5) # Verification window 10s
-# returrn_val = AUTH_REQUEST().verify(verification_mail=email_id, verification_OTP=_otp)
-
-# #placeholder code
-# print(returrn_val)
-
 import uuid
+
+from logsmith import log
+
 from handlers.requestHandler import AUTH_REQUEST
 from standards.return_codes import RETURN_CODES
+
+#Initiate Logging
+log = log()
+log.configure(console_only=True, ENV="Dev")
+
 
 class AUTHLIB:
 
@@ -43,18 +19,34 @@ class AUTHLIB:
 
 
     def register(self, mailID, username, password):
-        generated_otp = AUTH_REQUEST().register(
+        response_code, generated_otp = AUTH_REQUEST().register(
             mailID=mailID,
             name=username,
             password=password
         )
-        return generated_otp
 
-    def verification(self, mailID, user_supplied_secret):
-        verification_prompt, profile = AUTH_REQUEST().verify(
+        if response_code == RETURN_CODES.ALR01:
+            return RETURN_CODES.ALR01["details"]
+        elif response_code == RETURN_CODES.ALR02 or response_code == RETURN_CODES.ALR03:
+            return generated_otp
+
+
+    def verify(self, mailID, user_supplied_secret):
+        response_code, response_object = AUTH_REQUEST().verify(
             verification_mail=mailID,
             verification_OTP=user_supplied_secret
         )
 
-        if verification_prompt == "":
-            pass
+        if response_code == RETURN_CODES.ALR11:
+            return response_code["details"]
+        elif response_code == RETURN_CODES.ALR12:
+            regenerated_otp = response_object
+            return regenerated_otp
+        elif response_code == RETURN_CODES.ALR13:
+            return response_code["details"]
+        elif response_code == RETURN_CODES.ALR14:
+            verified_profile = response_object
+            return verified_profile
+        elif response_code == RETURN_CODES.ALR15:
+            regenerated_otp = response_object
+            return regenerated_otp
