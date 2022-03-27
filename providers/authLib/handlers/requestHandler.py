@@ -1,6 +1,7 @@
 import datetime
 import hashlib
 import json
+import re
 
 from configPy import JSONConfigParser
 from logsmith import log
@@ -30,6 +31,15 @@ def hash_password(password) -> str:
     ).hexdigest()
 
 
+# Check Email Validity
+def check_mailID_validity(mailID) -> bool:
+    regex = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+')
+    if re.fullmatch(regex, mailID):
+        return True
+    else:
+        return False
+
+
 # Auth Request Class
 class AUTH_REQUEST:
 
@@ -37,6 +47,10 @@ class AUTH_REQUEST:
         pass
 
     def register(self, mailID, name, password):
+
+        if not check_mailID_validity(mailID=mailID) :
+            return "Invalid Email"
+
         self.request_id = UUID().generate()
         self._OTP = OTP().generate(length=6)
         self._REQUEST_TIME = datetime.datetime.now(tz=datetime.timezone.utc)
