@@ -1,6 +1,6 @@
 ---
 name: Sub Component Development
-about: Issue for tracking Development of Sub-components of Components..
+about: Issue for tracking Development of Sub-components of Components.
 title: "[Sub Component]"
 labels: enhancement, sub-components
 assignees: TanmoySG
