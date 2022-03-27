@@ -32,7 +32,7 @@
 
 import uuid
 from handlers.requestHandler import AUTH_REQUEST
-from providers.standards.return_codes import RETURN_CODES
+from standards.return_codes import RETURN_CODES
 
 class AUTHLIB:
 
@@ -58,5 +58,3 @@ class AUTHLIB:
 
         if verification_prompt == "":
             pass
-
-print(RETURN_CODES().X001)
