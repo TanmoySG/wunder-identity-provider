@@ -38,11 +38,11 @@ Request Handler `R`
 
 | Code | Sub Scope | Details |
 | ---- | --------- | ------- |
-| 0AR01 | register `0` | Invalid Email ID `1` |
-| 0AR02 | register `0` | Registered Successfully `2`|
-| 0AR03 | register `0` | Registration Request Already Exists. OTP/Mail Resent `3` |
-| 0AR11 | verify `1` | Mail Doesn't Exist in AuthLib. Re Register `1` |
-| 0AR12 | verify `1`  | Request Expired. OTP Regenerated `2` |
-| 0AR13 | verify `1`  | Incorrect OTP `3` |
-| 0AR14 | verify  `1` | OTP Verified Successfully `4`|
-| 0AR15 | verify  `1` | OTP Expired. OTP Regenerated `5` |
+| `0AR01` | register `0` | Invalid Email ID `1` |
+| `0AR02` | register `0` | Registered Successfully `2`|
+| `0AR03` | register `0` | Registration Request Already Exists. OTP/Mail Resent `3` |
+| `0AR11` | verify `1` | Mail Doesn't Exist in AuthLib. Re Register `1` |
+| `0AR12` | verify `1`  | Request Expired. OTP Regenerated `2` |
+| `0AR13` | verify `1`  | Incorrect OTP `3` |
+| `0AR14` | verify  `1` | OTP Verified Successfully `4`|
+| `0AR15` | verify  `1` | OTP Expired. OTP Regenerated `5` |
