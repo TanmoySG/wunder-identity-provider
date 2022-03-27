@@ -30,12 +30,15 @@ class TIMESTAMP:
     def __init__(self) -> None:
         self.current_datetime = datetime.datetime.now(tz=datetime.timezone.utc)
 
-    def generate(self, timeframe):
+    def generate(self, timeframe, initTime=None):
         # timeframe - OTP Validity Timeframe in Second
+        self.initTime = self.current_datetime
+        if initTime != None:
+            self.initTime = datetime.datetime.fromisoformat(initTime)
         self.timestamp_frame = [
             str(
                 datetime.datetime.timestamp(
-                    self.current_datetime + datetime.timedelta(seconds=i)
+                    self.initTime + datetime.timedelta(seconds=i)
                 )
             ).split(".")[0] for i in range(0, timeframe)
         ]
@@ -51,7 +54,7 @@ class UUID:
 
     def generate(self):
         self.unique_id = uuid.uuid4()
-        return self.unique_id
+        return self.unique_id.hex
 
 
 # SECRET Generator
@@ -62,16 +65,17 @@ class HASH_SECRET:
         pass
 
     def generate(self, OTP, TIMESTAMPS):
+        _OTP = hashlib.md5(OTP.encode("UTF-8")).hexdigest()
         if type(TIMESTAMPS) == list:
             for timestamp in TIMESTAMPS:
-                secret = f"{timestamp}/{OTP}"
+                secret = f"{timestamp}/{_OTP}"
                 self.secrets.append(
                     hashlib.sha256(
                         secret.encode("utf-8")
                     ).hexdigest()
                 )
         elif type(TIMESTAMPS) == str:
-            secret = f"{TIMESTAMPS}/{OTP}"
+            secret = f"{TIMESTAMPS}/{_OTP}"
             self.secrets = hashlib.sha256(
                 secret.encode("utf-8")
             ).hexdigest()
