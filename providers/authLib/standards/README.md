@@ -36,6 +36,8 @@ For The following scopes the return statements used for Handlers are -
 
 Request Handler `R`
 
+Sub-Scopes - register `0` and verify `1`
+
 | Code | Sub Scope | Details |
 | ---- | --------- | ------- |
 | `0AR01` | register `0` | Invalid Email ID `1` |
@@ -46,3 +48,16 @@ Request Handler `R`
 | `0AR13` | verify `1`  | Incorrect OTP `3` |
 | `0AR14` | verify  `1` | OTP Verified Successfully `4`|
 | `0AR15` | verify  `1` | OTP Expired. OTP Regenerated `5` |
+
+## Return Codes for AuthLib
+
+| Code | Details |
+| ---- | ------- |
+| `0AR01`  | Invalid Email ID |
+| `0AR02`  | Registered Successfully |
+| `0AR03` | Registration Request Already Exists. OTP/Mail Resent |
+| `0AR11`  | Mail Doesn't Exist in AuthLib. Re Register |
+| `0AR12`  | Request Expired. OTP Regenerated  |
+| `0AR13` | Incorrect OTP |
+| `0AR14` | OTP Verified Successfully|
+| `0AR15`  | OTP Expired. OTP Regenerated |
