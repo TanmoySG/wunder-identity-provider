@@ -4,7 +4,6 @@ Standardized Return Codes are used to make sure that every action in the AuthLib
 
 Return codes are created using fragments of various scopes. For Example, return codes of requestHandler methods can be different from that of generators.
 
-## Return Codes for AuthLib
 
 | Code | Details |
 | ---- | ------- |
