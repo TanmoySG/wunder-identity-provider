@@ -4,6 +4,19 @@ Standardized Return Codes are used to make sure that every action in the AuthLib
 
 Return codes are created using fragments of various scopes. For Example, return codes of requestHandler methods can be different from that of generators.
 
+## Return Codes for AuthLib
+
+| Code | Details |
+| ---- | ------- |
+| `0AR01`  | Invalid Email ID |
+| `0AR02`  | Registered Successfully |
+| `0AR03` | Registration Request Already Exists. OTP/Mail Resent |
+| `0AR11`  | Mail Doesn't Exist in AuthLib. Re Register |
+| `0AR12`  | Request Expired. OTP Regenerated  |
+| `0AR13` | Incorrect OTP |
+| `0AR14` | OTP Verified Successfully|
+| `0AR15`  | OTP Expired. OTP Regenerated |
+
 ## Defining Standardized Return Codes
 
 Standardized return Codes have different scopes -
@@ -48,16 +61,3 @@ Sub-Scopes - register `0` and verify `1`
 | `0AR13` | verify `1`  | Incorrect OTP `3` |
 | `0AR14` | verify  `1` | OTP Verified Successfully `4`|
 | `0AR15` | verify  `1` | OTP Expired. OTP Regenerated `5` |
-
-## Return Codes for AuthLib
-
-| Code | Details |
-| ---- | ------- |
-| `0AR01`  | Invalid Email ID |
-| `0AR02`  | Registered Successfully |
-| `0AR03` | Registration Request Already Exists. OTP/Mail Resent |
-| `0AR11`  | Mail Doesn't Exist in AuthLib. Re Register |
-| `0AR12`  | Request Expired. OTP Regenerated  |
-| `0AR13` | Incorrect OTP |
-| `0AR14` | OTP Verified Successfully|
-| `0AR15`  | OTP Expired. OTP Regenerated |
