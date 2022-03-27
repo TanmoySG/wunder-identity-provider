@@ -2,7 +2,7 @@
 name: Standardization/Maintenance
 about: Code Standardization or Maintenance Activity of code.
 title: "[Standardization/Maintenance]"
-labels: ''
+labels: maintenance, standardization
 assignees: TanmoySG
 
 ---
