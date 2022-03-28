@@ -7,14 +7,14 @@ Return codes are created using fragments of various scopes. For Example, return 
 
 | Code | Details |
 | ---- | ------- |
-| `0AR01`  | Invalid Email ID |
-| `0AR02`  | Registered Successfully |
-| `0AR03` | Registration Request Already Exists. OTP/Mail Resent |
-| `0AR11`  | Mail Doesn't Exist in AuthLib. Re Register |
-| `0AR12`  | Request Expired. OTP Regenerated  |
-| `0AR13` | Incorrect OTP |
-| `0AR14` | OTP Verified Successfully|
-| `0AR15`  | OTP Expired. OTP Regenerated |
+| `ALR01`  | Invalid Email ID |
+| `ALR02`  | Registered Successfully |
+| `ALR03` | Registration Request Already Exists. OTP/Mail Resent |
+| `ALR11`  | Mail Doesn't Exist in AuthLib. Re Register |
+| `ALR12`  | Request Expired. OTP Regenerated  |
+| `ALR13` | Incorrect OTP |
+| `ALR14` | OTP Verified Successfully|
+| `ALR15`  | OTP Expired. OTP Regenerated |
 
 ## Defining Standardized Return Codes
 
@@ -30,7 +30,7 @@ The complete return code may be defined as - `global-scope` + `script-scope` + `
 
 ### Global Scope
 
-For authLib the Global Scoped return statement used is - `0A`
+For authLib the Global Scoped return statement used is - `AL`
 
 ### Script Scope
 
@@ -52,11 +52,11 @@ Sub-Scopes - register `0` and verify `1`
 
 | Code | Sub Scope | Details |
 | ---- | --------- | ------- |
-| `0AR01` | register `0` | Invalid Email ID `1` |
-| `0AR02` | register `0` | Registered Successfully `2`|
-| `0AR03` | register `0` | Registration Request Already Exists. OTP/Mail Resent `3` |
-| `0AR11` | verify `1` | Mail Doesn't Exist in AuthLib. Re Register `1` |
-| `0AR12` | verify `1`  | Request Expired. OTP Regenerated `2` |
-| `0AR13` | verify `1`  | Incorrect OTP `3` |
-| `0AR14` | verify  `1` | OTP Verified Successfully `4`|
-| `0AR15` | verify  `1` | OTP Expired. OTP Regenerated `5` |
+| `ALR01` | register `0` | Invalid Email ID `1` |
+| `ALR02` | register `0` | Registered Successfully `2`|
+| `ALR03` | register `0` | Registration Request Already Exists. OTP/Mail Resent `3` |
+| `ALR11` | verify `1` | Mail Doesn't Exist in AuthLib. Re Register `1` |
+| `ALR12` | verify `1`  | Request Expired. OTP Regenerated `2` |
+| `ALR13` | verify `1`  | Incorrect OTP `3` |
+| `ALR14` | verify  `1` | OTP Verified Successfully `4`|
+| `ALR15` | verify  `1` | OTP Expired. OTP Regenerated `5` |

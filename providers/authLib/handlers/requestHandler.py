@@ -4,18 +4,14 @@ import json
 import re
 
 from configPy import JSONConfigParser
-from logsmith import log
 
 from handlers.authProfileHandler import AUTH_PROFILE
 from handlers.generators import HASH_SECRET, OTP, TIMESTAMP, UUID
+from standards.return_codes import RETURN_CODES as RC
 
 # Import Configurations
 configObject = JSONConfigParser(configFilePath=".configs/datafiles.config.json")
 configurations = configObject.getConfigurations()
-
-# Initiate Logging
-log = log()
-log.configure(console_only=True, ENV="Dev")
 
 
 # JSON Writer Function
@@ -49,7 +45,7 @@ class AUTH_REQUEST:
     def register(self, mailID, name, password):
 
         if not check_mailID_validity(mailID=mailID) :
-            return "Invalid Email"
+            return RC.ALR01, {}
 
         self.request_id = UUID().generate()
         self._OTP = OTP().generate(length=6)
@@ -67,11 +63,9 @@ class AUTH_REQUEST:
                     password=password
                 )
                 write_json(authlib, configurations["authlib-store"])
-                log.INFO("Registered")
-                return self._OTP
+                return RC.ALR02, self._OTP
             else:
-                log.WARN("Mail Exists")
-                return self._OTP
+                return RC.ALR03, self._OTP
 
     def regenerate_profile(self, mailID):
         self._OTP = OTP().generate(length=6)
@@ -93,15 +87,15 @@ class AUTH_REQUEST:
             authlib=json.load(authlibObject)
 
             if verification_mail not in authlib.keys():
-                return "Return something" # Change Later
+                return RC.ALR11, {}
 
             verification_profile = authlib[verification_mail]
 
             if verification_profile["hashedSecret"] == "" and verification_profile["requestTimestamp"] == "" :
-                return "OTP Regenerated", self.regenerate_profile(mailID=verification_mail)
+                return RC.ALR12, self.regenerate_profile(mailID=verification_mail)
 
             if hashlib.md5(verification_OTP.encode("UTF-8")).hexdigest() != verification_profile["hashedSecret"]:
-                return "Incorrect OTP", {}
+                return RC.ALR13, {}
             
             # Generate Secret for Current Timestamp
             current_timestamp = TIMESTAMP().generate(timeframe=1)
@@ -116,7 +110,7 @@ class AUTH_REQUEST:
                 profile = authlib[verification_mail]
                 del authlib[verification_mail]
                 write_json(authlib, configurations["authlib-store"])
-                return profile
+                return RC.ALR14, profile
             else:
                 regenerated_otp = self.regenerate_profile(mailID=verification_mail)
-                return "Expired OTP", regenerated_otp
+                return RC.ALR15, regenerated_otp
