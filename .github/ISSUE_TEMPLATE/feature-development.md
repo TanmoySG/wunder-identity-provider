@@ -2,7 +2,7 @@
 name: Feature Development
 about: Issue for tracking Development of High Level Feature.
 title: "[Feature]"
-labels: architectural design, enhancement, feature
+labels: enhancement, feature
 assignees: TanmoySG
 
 ---
