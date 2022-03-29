@@ -36,15 +36,15 @@ class AUTHLIB:
         )
 
         if response_code == RETURN_CODES.ALR11:
-            return response_code
+            return response_code, {}
         elif response_code == RETURN_CODES.ALR12:
             regenerated_otp = response_object
-            return regenerated_otp
+            return response_code, regenerated_otp
         elif response_code == RETURN_CODES.ALR13:
-            return response_code
+            return response_code, {}
         elif response_code == RETURN_CODES.ALR14:
             verified_profile = response_object
-            return verified_profile
+            return response_code, verified_profile
         elif response_code == RETURN_CODES.ALR15:
             regenerated_otp = response_object
-            return regenerated_otp
+            return response_code, regenerated_otp

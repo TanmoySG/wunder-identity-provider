@@ -16,7 +16,7 @@ class RETURN_CODES:
         "return_code": "ALR03",
         "scope": "authlib.requests.register",
         "details": "Request Exists. Check your Mail.",
-        "response": "success"
+        "response": "failure"
     }
     ALR11 = {
         "return_code": "ALR11",

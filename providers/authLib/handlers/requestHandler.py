@@ -108,6 +108,7 @@ class AUTH_REQUEST:
             
             if hashed_verification_secret in verifiable_secrets:
                 profile = authlib[verification_mail]
+                profile["status"] = "verified"
                 del authlib[verification_mail]
                 write_json(authlib, configurations["authlib-store"])
                 return RC.ALR14, profile
