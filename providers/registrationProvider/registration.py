@@ -2,8 +2,8 @@ import json
 
 from configPy import JSONConfigParser
 
-from handlers.generators import ACCESS_TOKEN, REGISTRATION_TIME, USERID
-from handlers.profile import PROFILE
+from providers.registrationProvider.handlers.generators import ACCESS_TOKEN, REGISTRATION_TIME, USERID
+from providers.registrationProvider.handlers.profile import PROFILE
 
 # USERID(), REGISTRATION_TIME(),
 
@@ -41,15 +41,4 @@ class REGISTER:
                 admin_access_token=token
             )
             write_json(profile_store, self.profile_store_file)
-        print("Something")
-
-
-REGISTER().register_verified_profile({
-        "email": "random1@gmail.com",
-        "authRequestID": "c9371e4a9b914a0297743c71897084cc",
-        "name": "Jane Doe",
-        "hashedSecret": "6363cffb341becba0acec637a27e5193",
-        "passwordHash": "2637e59347980f0bae0e2817fe650c05be6faf161f957a32feec1d6b2d460a678d0a12c603e459abb43a36ddbe47b38f34841959c426c3d835e18b1b2d2939fb",
-        "requestTimestamp": "2022-03-26 17:48:11.921082+00:00",
-        "status": "unverified"
-    })
+        print("Registered")
