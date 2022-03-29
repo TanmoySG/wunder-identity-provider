@@ -20,9 +20,17 @@ class REGISTRATION_TIME:
 
 class ACCESS_TOKEN:
 
-    def __init__(self, length) -> None:
+    # length [int] - Length of Access Token
+    # use_method [secrets | binascii] - Method for generating Token
+
+    def __init__(self, length, use_method="secrets") -> None:
         self.length = length
+        self.method = use_method
 
     def generate(self) -> str:
-        # return binascii.hexlify(os.urandom(self.length)).decode()
-        return secrets.token_urlsafe(self.length)
+        if self.method == "binascii" :
+            return binascii.hexlify(os.urandom(self.length)).decode()
+        elif self.method == "secrets" :
+            return secrets.token_urlsafe(self.length)
+        else:
+            return secrets.token_hex(self.length)
