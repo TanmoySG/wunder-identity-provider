@@ -25,4 +25,4 @@ class ACCESS_TOKEN:
 
     def generate(self) -> str:
         # return binascii.hexlify(os.urandom(self.length)).decode()
-        return secrets.token_hex(self.length)
+        return secrets.token_urlsafe(self.length)
