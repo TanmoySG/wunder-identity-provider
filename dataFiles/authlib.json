@@ -7,5 +7,14 @@
         "passwordHash": "2637e59347980f0bae0e2817fe650c05be6faf161f957a32feec1d6b2d460a678d0a12c603e459abb43a36ddbe47b38f34841959c426c3d835e18b1b2d2939fb",
         "requestTimestamp": "2022-03-26 17:48:11.921082+00:00",
         "status": "unverified"
+    },
+    "tanmoysps@gmail.com": {
+        "email": "tanmoysps@gmail.com",
+        "authRequestID": "6a7940e331514ffb8ef900fe568fe059",
+        "name": "tanmoy",
+        "hashedSecret": "cf890793c6a7d1f0f5afe5e0b9195515",
+        "passwordHash": "a9c4a7dd2909d8af3e69e3e5fedfec2ab99fbdcc3cb6702542e78b637cad9686a991b7335f3bf4265d408850c6c4b6c9a8ef4d7bd493f8754b613e82ee433010",
+        "requestTimestamp": "2022-03-29 07:30:03.214111+00:00",
+        "status": "unverified"
     }
 }
