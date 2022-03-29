@@ -5,9 +5,9 @@ import re
 
 from configPy import JSONConfigParser
 
-from handlers.authProfileHandler import AUTH_PROFILE
-from handlers.generators import HASH_SECRET, OTP, TIMESTAMP, UUID
-from standards.return_codes import RETURN_CODES as RC
+from providers.authLib.handlers.authProfileHandler import AUTH_PROFILE
+from providers.authLib.handlers.generators import HASH_SECRET, OTP, TIMESTAMP, UUID
+from providers.authLib.standards.return_codes import RETURN_CODES as RC
 
 # Import Configurations
 configObject = JSONConfigParser(configFilePath=".configs/datafiles.config.json")
@@ -65,7 +65,7 @@ class AUTH_REQUEST:
                 write_json(authlib, configurations["authlib-store"])
                 return RC.ALR02, self._OTP
             else:
-                return RC.ALR03, self._OTP
+                return RC.ALR03, ""
 
     def regenerate_profile(self, mailID):
         self._OTP = OTP().generate(length=6)
