@@ -1,15 +1,15 @@
 class RETURN_CODES:
 
-    MAIL01 = {
-        "return_code": "MAIL01",
+    MLS01 = {
+        "return_code": "MLS01",
         "scope": "mailer.send.mail",
         "details": "Mail Sent!",
         "response": "success"
     }
 
     # Failure Case - Yet to be Implemented
-    MAIL02 = {
-        "return_code": "MAIL02",
+    MLS02 = {
+        "return_code": "MLS02",
         "scope": "mailer.send.mail",
         "details": "Could not send mail.",
         "response": "failure"

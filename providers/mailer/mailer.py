@@ -57,9 +57,5 @@ class MAILER:
             server.login(sender, password)
             server.sendmail(sender, recipient, self.message.as_string())
 
-        return RETURN_CODES.MAIL01
+        return RETURN_CODES.MLS01
 
-# Usage -
-# MAILER = MAILER(mailer_mode=CONTENT_FACTORY.VERIFIED_MAIL)
-# MAILER.prepare_mail(payload="tanmoy")
-# MAILER.send_mail("tanmoysps@gmail.com")
