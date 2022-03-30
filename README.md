@@ -25,15 +25,25 @@ make run-demo
 Running the above should output    
 ```
 Resources Torn Down
-
+--------------------
 Running Demo...
-[ DEV - Logging at logs ]
-(DEV) [30/03/2022 03:46:03] INFO : {'return_code': 'ALR02', 'scope': 'authlib.requests.register', 'details': 'Request Registered Successfully. OTP Generated.', 'response': 'success'}
-(DEV) [30/03/2022 03:46:07] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
-(DEV) [30/03/2022 03:46:07] INFO : {'return_code': 'ALR14', 'scope': 'authlib.requests.verify', 'details': 'Correct OTP. Authentication Successful.', 'response': 'success'}
-(DEV) [30/03/2022 03:46:09] INFO : {'return_code': 'RPR01', 'scope': 'registration.register.verified', 'details': 'Profile Created. Welcome Mail Sent.', 'response': 'success'}
-(DEV) [30/03/2022 03:46:12] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
-(DEV) [30/03/2022 03:46:12] SUCCESS : Process Complete
+--------------------
+[ DEV - Logging to Console only ]
+--------------------------------------------
+End-to-End Registration Flow Start
+--------------------------------------------
+(DEV) [30/03/2022 20:53:33] INFO : {'return_code': 'ALR02', 'scope': 'authlib.requests.register', 'details': 'Request Registered Successfully. OTP Generated.', 'response': 'success'}
+(DEV) [30/03/2022 20:53:37] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 20:53:38] INFO : {'return_code': 'ALR14', 'scope': 'authlib.requests.verify', 'details': 'Correct OTP. Authentication Successful.', 'response': 'success'}
+(DEV) [30/03/2022 20:53:39] INFO : {'return_code': 'RPR01', 'scope': 'registration.register.verified', 'details': 'Profile Created. Welcome Mail Sent.', 'response': 'success'}
+(DEV) [30/03/2022 20:53:42] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 20:53:42] SUCCESS : End-to-End Registration Flow Complete
+--------------------------------------------
+End-to-End Login Flow Start
+--------------------------------------------
+(DEV) [30/03/2022 20:53:44] INFO : {'return_code': 'LPR04', 'scope': 'login.profile.verified', 'details': 'Account Verified. Login Successful.', 'response': 'success'}
+(DEV) [30/03/2022 20:53:45] SUCCESS : End-to-End Login Flow Complete
+--------------------------------------------
 ```
 Teardown created resources while running the demo
 ```

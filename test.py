@@ -6,6 +6,9 @@ from providers.mailer.mailer import MAILER
 from providers.mailer.standards.return_codes import RETURN_CODES as MAILER_RC
 from providers.mailer.content import CONTENT_FACTORY
 from providers.registrationProvider.standards.return_codes import RETURN_CODES as RRC
+from providers.loginProvider.login import LOGIN
+from providers.loginProvider.standards.return_codes import RETURN_CODES as LRC
+
 
 from logsmith import log
 
@@ -18,7 +21,10 @@ sample_user = {
     "name": "Joh Doe",
     "password": "123456"
 }
-
+print("--------------------------------------------")
+print("End-to-End Registration Flow Start")
+print("--------------------------------------------")
+# Register New User 
 response, otp = AUTHLIB().register(
     mailID=sample_user["email"],
     username=sample_user["name"],
@@ -29,6 +35,7 @@ log.INFO(response)
 
 sleep(1)
 
+# Mail OTP
 if response == AUTHLIB_RC.ALR02:
     MAILER_1 = MAILER(mailer_mode=CONTENT_FACTORY.OTP_MAIL)
     MAILER_1.prepare_mail(payload=otp)
@@ -38,6 +45,7 @@ if response == AUTHLIB_RC.ALR02:
 
 sleep(1)
 
+# Verify Account with OTP
 response, profile = AUTHLIB().verify(
     mailID=sample_user["email"],
     user_supplied_secret=otp
@@ -45,14 +53,16 @@ response, profile = AUTHLIB().verify(
 
 log.INFO(response)
 
-sleep(2)
+sleep(1)
 
+# Register Verified Profile
 if response == AUTHLIB_RC.ALR14:
     response = REGISTER().register_verified_profile(verified_profile=profile)
     log.INFO(response)
 
     sleep(1)
 
+    # Mail User on Successful Verification
     if response == RRC.RPR01:
         MAILER_2 =  MAILER(mailer_mode=CONTENT_FACTORY.VERIFIED_MAIL)
         MAILER_2.prepare_mail(payload=sample_user["email"])
@@ -60,4 +70,26 @@ if response == AUTHLIB_RC.ALR14:
 
         log.INFO(response)
 
-log.SUCCESS("Process Complete")
+
+log.SUCCESS("End-to-End Registration Flow Complete")
+
+sleep(1)
+
+print("--------------------------------------------")
+print("End-to-End Login Flow Start")
+print("--------------------------------------------")
+
+sleep(1)
+# Login with email-password
+response, jwt_token = LOGIN().verify(
+    mailID=sample_user["email"],
+    password=sample_user["password"]
+)
+
+if response == LRC.LPR04:
+    log.INFO(response)
+
+sleep(1)
+
+log.SUCCESS("End-to-End Login Flow Complete")
+print("--------------------------------------------")
