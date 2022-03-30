@@ -1,4 +1,49 @@
-[ Dev - Logging at logs ]
-(Dev) [15/03/2022 17:41:43] SUCCESS : Auth Profiles Table Created!
-[ Dev - Logging at logs ]
-(Dev) [16/03/2022 09:31:51] SUCCESS : Auth Profiles Table Created!
+[ DEV - Logging at logs ]
+(DEV) [30/03/2022 03:35:32] INFO : {'return_code': 'ALR02', 'scope': 'authlib.requests.register', 'details': 'Request Registered Successfully. OTP Generated.', 'response': 'success'}
+(DEV) [30/03/2022 03:35:35] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:35:35] INFO : {'return_code': 'ALR14', 'scope': 'authlib.requests.verify', 'details': 'Correct OTP. Authentication Successful.', 'response': 'success'}
+(DEV) [30/03/2022 03:35:37] INFO : {'return_code': 'RPR01', 'scope': 'registration.register.verified', 'details': 'Profile Created. Welcome Mail Sent.', 'response': 'success'}
+(DEV) [30/03/2022 03:35:41] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:35:41] SUCCESS : Process Complete
+[ DEV - Logging at logs ]
+(DEV) [30/03/2022 03:41:27] INFO : {'return_code': 'ALR02', 'scope': 'authlib.requests.register', 'details': 'Request Registered Successfully. OTP Generated.', 'response': 'success'}
+(DEV) [30/03/2022 03:41:30] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:41:30] INFO : {'return_code': 'ALR14', 'scope': 'authlib.requests.verify', 'details': 'Correct OTP. Authentication Successful.', 'response': 'success'}
+(DEV) [30/03/2022 03:41:32] INFO : {'return_code': 'RPR01', 'scope': 'registration.register.verified', 'details': 'Profile Created. Welcome Mail Sent.', 'response': 'success'}
+(DEV) [30/03/2022 03:41:35] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:41:35] SUCCESS : Process Complete
+[ DEV - Logging at logs ]
+(DEV) [30/03/2022 03:42:44] INFO : {'return_code': 'ALR02', 'scope': 'authlib.requests.register', 'details': 'Request Registered Successfully. OTP Generated.', 'response': 'success'}
+(DEV) [30/03/2022 03:42:48] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:42:48] INFO : {'return_code': 'ALR14', 'scope': 'authlib.requests.verify', 'details': 'Correct OTP. Authentication Successful.', 'response': 'success'}
+(DEV) [30/03/2022 03:42:50] INFO : {'return_code': 'RPR01', 'scope': 'registration.register.verified', 'details': 'Profile Created. Welcome Mail Sent.', 'response': 'success'}
+(DEV) [30/03/2022 03:42:53] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:42:53] SUCCESS : Process Complete
+[ DEV - Logging at logs ]
+(DEV) [30/03/2022 03:43:14] INFO : {'return_code': 'ALR02', 'scope': 'authlib.requests.register', 'details': 'Request Registered Successfully. OTP Generated.', 'response': 'success'}
+(DEV) [30/03/2022 03:43:17] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:43:17] INFO : {'return_code': 'ALR14', 'scope': 'authlib.requests.verify', 'details': 'Correct OTP. Authentication Successful.', 'response': 'success'}
+(DEV) [30/03/2022 03:43:19] INFO : {'return_code': 'RPR01', 'scope': 'registration.register.verified', 'details': 'Profile Created. Welcome Mail Sent.', 'response': 'success'}
+(DEV) [30/03/2022 03:43:22] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:43:22] SUCCESS : Process Complete
+[ DEV - Logging at logs ]
+(DEV) [30/03/2022 03:43:34] INFO : {'return_code': 'ALR02', 'scope': 'authlib.requests.register', 'details': 'Request Registered Successfully. OTP Generated.', 'response': 'success'}
+(DEV) [30/03/2022 03:43:38] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:43:38] INFO : {'return_code': 'ALR14', 'scope': 'authlib.requests.verify', 'details': 'Correct OTP. Authentication Successful.', 'response': 'success'}
+(DEV) [30/03/2022 03:43:40] INFO : {'return_code': 'RPR01', 'scope': 'registration.register.verified', 'details': 'Profile Created. Welcome Mail Sent.', 'response': 'success'}
+(DEV) [30/03/2022 03:43:43] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:43:43] SUCCESS : Process Complete
+[ DEV - Logging at logs ]
+(DEV) [30/03/2022 03:44:19] INFO : {'return_code': 'ALR02', 'scope': 'authlib.requests.register', 'details': 'Request Registered Successfully. OTP Generated.', 'response': 'success'}
+(DEV) [30/03/2022 03:44:22] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:44:22] INFO : {'return_code': 'ALR14', 'scope': 'authlib.requests.verify', 'details': 'Correct OTP. Authentication Successful.', 'response': 'success'}
+(DEV) [30/03/2022 03:44:24] INFO : {'return_code': 'RPR01', 'scope': 'registration.register.verified', 'details': 'Profile Created. Welcome Mail Sent.', 'response': 'success'}
+(DEV) [30/03/2022 03:44:27] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:44:27] SUCCESS : Process Complete
+[ DEV - Logging at logs ]
+(DEV) [30/03/2022 03:46:03] INFO : {'return_code': 'ALR02', 'scope': 'authlib.requests.register', 'details': 'Request Registered Successfully. OTP Generated.', 'response': 'success'}
+(DEV) [30/03/2022 03:46:07] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:46:07] INFO : {'return_code': 'ALR14', 'scope': 'authlib.requests.verify', 'details': 'Correct OTP. Authentication Successful.', 'response': 'success'}
+(DEV) [30/03/2022 03:46:09] INFO : {'return_code': 'RPR01', 'scope': 'registration.register.verified', 'details': 'Profile Created. Welcome Mail Sent.', 'response': 'success'}
+(DEV) [30/03/2022 03:46:12] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:46:12] SUCCESS : Process Complete

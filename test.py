@@ -11,7 +11,7 @@ from logsmith import log
 
 # Setup Logsmith
 log = log()
-log.configure(ENV="DEV", logfile="logs", console_only=True)
+log.configure(ENV="DEV", logfile="logs", console_only=False)
 
 sample_user = {
     "email": "tanmoysps@gmail.com",
@@ -54,7 +54,7 @@ if response == AUTHLIB_RC.ALR14:
 
     if response == RRC.RPR01:
         MAILER_2 =  MAILER(mailer_mode=CONTENT_FACTORY.VERIFIED_MAIL)
-        MAILER_2.prepare_mail(payload=otp)
+        MAILER_2.prepare_mail(payload=sample_user["email"])
         response = MAILER_2.send_mail(sample_user["email"])
 
         log.INFO(response)

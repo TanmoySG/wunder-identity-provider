@@ -12,3 +12,30 @@ The Identity of a User is uniquely defined (primarily) by the user's email ID, w
 
 ## Usage 
 
+Sample New User Data
+```
+Name: Tanmoy
+Mail: tanmoysps@gmail.com
+Password: 123456
+```
+Running the End-to-End Registration & Verification Flow
+```
+make run-demo
+```
+Running the above should output    
+```
+Resources Torn Down
+
+Running Demo...
+[ DEV - Logging at logs ]
+(DEV) [30/03/2022 03:46:03] INFO : {'return_code': 'ALR02', 'scope': 'authlib.requests.register', 'details': 'Request Registered Successfully. OTP Generated.', 'response': 'success'}
+(DEV) [30/03/2022 03:46:07] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:46:07] INFO : {'return_code': 'ALR14', 'scope': 'authlib.requests.verify', 'details': 'Correct OTP. Authentication Successful.', 'response': 'success'}
+(DEV) [30/03/2022 03:46:09] INFO : {'return_code': 'RPR01', 'scope': 'registration.register.verified', 'details': 'Profile Created. Welcome Mail Sent.', 'response': 'success'}
+(DEV) [30/03/2022 03:46:12] INFO : {'return_code': 'MLS01', 'scope': 'mailer.send.mail', 'details': 'Mail Sent!', 'response': 'success'}
+(DEV) [30/03/2022 03:46:12] SUCCESS : Process Complete
+```
+Teardown created resources while running the demo
+```
+make teardown
+```
