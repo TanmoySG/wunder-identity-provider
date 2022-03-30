@@ -1,12 +1,12 @@
-import jwt
-from configPy import JSONConfigParser
+import hashlib
 import json
 import re
-import hashlib
-from standards.return_codes import RETURN_CODES
-from handlers.payload import PAYLOAD
-from handlers.jwt import JWT
 
+from configPy import JSONConfigParser
+
+from providers.loginProvider.handlers.jwt import JWT
+from providers.loginProvider.handlers.payload import PAYLOAD
+from providers.loginProvider.standards.return_codes import RETURN_CODES
 
 # Import Configurations
 configObject = JSONConfigParser(configFilePath=".configs/datafiles.config.json")
@@ -32,7 +32,7 @@ def hash_password(password) -> str:
     ).hexdigest()
 
 
-class REQUEST:
+class LOGIN:
 
     def __init__(self) -> None:
         self.profile_store_file = configurations["user-profile-store"]
@@ -57,7 +57,9 @@ class REQUEST:
                         secret=jwtConfigurations["jwt-secret"]
                     )
 
-                    verified_response = RETURN_CODES.LPR04
+                    verified_response = {}
+                    verified_response["response"] = RETURN_CODES.LPR04["response"]
+                    verified_response["message"] = RETURN_CODES.LPR04["details"]
                     verified_response["username"] = profile["name"]
                     verified_response["token"] = token
                     
@@ -66,7 +68,3 @@ class REQUEST:
                     return RETURN_CODES.LPR03, {}
             else:
                 return RETURN_CODES.LPR02, {}
-
-# resp, ret = REQUEST().verify(mailID="tanmoysps@gmail.com", password="123456")
-
-# print(resp, "\n" , ret)
