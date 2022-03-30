@@ -1,1 +1,11 @@
-{}
+{
+    "tanmoysps@gmail.com": {
+        "email": "tanmoysps@gmail.com",
+        "user_uID": "b63b3528-3862-47a2-8737-bd749900dbd4",
+        "name": "Joh Doe",
+        "password": "ba3253876aed6bc22d4a6ff53d8406c6ad864195ed144ab5c87621b6c233b548baeae6956df346ec8c17f5ea10f35ee3cbc514797ed7ddd3145464e2a0bab413",
+        "admin_access_token": "nYCImSV2uK8TpQ7ikrVpwxcGqturyy24FXpEuzNJmN3Az23YVCrOIhe1M6iDceTaaOwk_XEwZEi3cKFW-d5m7HKaGo-FSVK5Sg4BlhhZaBh1GLdlayBJ2dWaC_D0ScMOy5z6yUsGjpP4oNgSQgXwp1DCA0EXFQWexLoVR8K-OQI",
+        "registration_timestamp": "2022-03-30 19:18:22.738332+00:00",
+        "services": {}
+    }
+}

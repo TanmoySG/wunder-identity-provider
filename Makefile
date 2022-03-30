@@ -1,6 +1,6 @@
 run-demo:
 	@make -s teardown
-	@echo
+	@echo --------------------
 	@echo Running Demo...
 	@python test.py
 

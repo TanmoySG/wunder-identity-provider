@@ -11,7 +11,7 @@ from logsmith import log
 
 # Setup Logsmith
 log = log()
-log.configure(ENV="DEV", logfile="logs", console_only=False)
+log.configure(ENV="DEV", logfile="logs", console_only=True)
 
 sample_user = {
     "email": "tanmoysps@gmail.com",
@@ -36,6 +36,7 @@ if response == AUTHLIB_RC.ALR02:
 
     log.INFO(response)
 
+sleep(1)
 
 response, profile = AUTHLIB().verify(
     mailID=sample_user["email"],
