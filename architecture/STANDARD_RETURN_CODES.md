@@ -7,7 +7,7 @@ This Documentation contains the details of various standard return codes used th
 Refer to [providers/authlib/standards/return_codes.py](../providers/authlib/standards/return_codes.py) file.
 
 ```
-ALR01 = {
+    ALR01 = {
         "return_code": "ALR01",
         "scope": "authlib.requests.register",
         "details": "Invalid Email Address",
