@@ -18,6 +18,7 @@ from providers.mailer.standards.return_codes import RETURN_CODES as ML_RC
 from providers.registrationProvider.registration import REGISTER
 from providers.registrationProvider.standards.return_codes import RETURN_CODES as RG_RC
 
+from providers.response_factory import RESPONSE_FACTORY
 
 # Setup Logsmith
 log = log()
@@ -25,6 +26,7 @@ log.configure(ENV="DEV", logfile="logs", console_only=True)
 
 app = Flask(__name__)
 CORS(app)
+
 
 
 @app.route("/register/generate", methods = ['POST'])
@@ -43,7 +45,7 @@ def new_registration_request():
         response = REGISTRATION_MAILER.send_mail(request_data["email"])
 
         if response == ML_RC.MLS01:
-            log.INFO(response["deatils"])
+            log.INFO(response["details"])
             return {}
         else:
             log.WARN(response["details"])
