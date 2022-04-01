@@ -25,7 +25,10 @@ default_user = {
 sample_user = default_user
 
 flow = sys.argv[1]
-# sample_user = json.load(sys.argv[2]) if len(sys.argv[2]) > 0 else default_user
+
+if len(sys.argv) > 2 :
+    demo_user_file = sys.argv[2]
+    sample_user = json.load(open(demo_user_file, "r"))
 
 class DEMO:
 
@@ -84,16 +87,18 @@ class DEMO:
     def login_flow(self):
 
         # Login with email-password
-        response, jwt_token = LOGIN().verify(
+        response, jwt_plus_response = LOGIN().verify(
             mailID=sample_user["email"],
             password=sample_user["password"]
         )
 
         if response == LRC.LPR04:
             log.INFO(response)
-            print(jwt_token)
+            log.SUCCESS("End-to-End Login Flow Demo Complete")
+            print()
+            print()
+            print("Response", jwt_plus_response)
 
-        log.SUCCESS("End-to-End Login Flow Demo Complete")
 
 
 def runner(flow):
