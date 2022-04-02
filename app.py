@@ -24,6 +24,7 @@ def new_registration_request():
     )
     return response
 
+
 # Account Verification Endpoint
 @app.route("/register/verify", methods=["POST"])
 def account_verification_request():
@@ -33,6 +34,15 @@ def account_verification_request():
     )
     return response
 
+
+# Login Endpoint
+@app.route("/login", methods=["POST"])
+def account_login_request():
+    request_data = request.get_json(force=True)
+    response = REQUEST_PROCESSOR().account_login_request_processor(
+        request_data=request_data
+    )
+    return response
 
 if __name__ == '__main__':
     app.run(debug=True)
