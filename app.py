@@ -24,7 +24,7 @@ def new_registration_request():
     )
     return response
 
-
+# Account Verification Endpoint
 @app.route("/register/verify", methods=["POST"])
 def account_verification_request():
     request_data = request.get_json(force=True)
