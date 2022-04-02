@@ -1,12 +1,7 @@
-from flask import Flask, jsonify, redirect, request, send_from_directory
+from flask import Flask, request
 from flask_cors import CORS
-# from logsmith import log
 
 from providers.request_processor import REQUEST_PROCESSOR
-
-# # Setup Logsmith
-# log = log()
-# log.configure(ENV="DEV", logfile="logs", console_only=True)
 
 app = Flask(__name__)
 CORS(app)

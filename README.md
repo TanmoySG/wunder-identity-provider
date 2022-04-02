@@ -16,6 +16,29 @@ Setup the Project
 ```
 make build
 ```
+## Running Flask-App Demo
+
+Start the flask server.
+```
+flask run
+```
+
+### Registration - Generate OTP Demo
+
+Run the demo using `cURL` by replacing the values of email, password and name.
+```
+ENDPOINT: {url}/register/generate
+METHOD:   POST
+
+curl --request POST \
+  --url https://url.com/register/generate \
+  --header 'content-type: application/json' \
+  --data '{
+  "email": "jane@doe.com",
+  "name": "Jane Doe",
+  "password": "123456"
+}'
+```
 
 ### Run Demos with default Demo User Data
 
