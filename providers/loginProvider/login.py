@@ -58,8 +58,8 @@ class LOGIN:
                     )
 
                     verified_response = {}
-                    verified_response["response"] = RETURN_CODES.LPR04["response"]
-                    verified_response["message"] = RETURN_CODES.LPR04["details"]
+                    # verified_response["response"] = RETURN_CODES.LPR04["response"]
+                    # verified_response["message"] = RETURN_CODES.LPR04["details"]
                     verified_response["username"] = profile["name"]
                     verified_response["token"] = token
                     
