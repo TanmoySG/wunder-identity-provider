@@ -139,3 +139,4 @@ dataFiles/authLibProfiles.db
 /.vscode/*
 /.vscode/settings.json
 .vscode/settings.json
+apper.py
