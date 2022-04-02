@@ -41,7 +41,7 @@ class REQUEST_PROCESSOR:
                 log.INFO(response["details"])
                 return RESPONSE_FACTORY().get(
                     status=response["response"],
-                    response=response["details"],
+                    response=AL_RC.ALR02["details"],
                     scopes={
                         AL_RC.ALR02["scope"]: AL_RC.ALR02["response"],
                         ML_RC.MLS01["scope"]: ML_RC.MLS01["response"]
@@ -92,7 +92,7 @@ class REQUEST_PROCESSOR:
                     log.INFO(response["details"])
                     return RESPONSE_FACTORY().get(
                         status=response["response"],
-                        response=response["details"],
+                        response=RG_RC.RPR01["details"],
                         scopes={
                             AL_RC.ALR14["scope"]: AL_RC.ALR14["response"],
                             RG_RC.RPR01["scope"]: RG_RC.RPR01["response"],
@@ -134,3 +134,31 @@ class REQUEST_PROCESSOR:
                 payload={}
             )
 
+
+    def account_login_request_processor(self, request_data):
+        
+        response, payload = LOGIN().verify(
+            mailID=request_data["email"],
+            password=request_data["password"]
+        )
+
+        if response == LG_RC.LPR04:
+            log.WARN(response["details"])
+            return RESPONSE_FACTORY().get(
+                status=response["response"],
+                response=LG_RC.LPR04["details"],
+                scopes={
+                    LG_RC.LPR04["scope"]: LG_RC.LPR04["response"]
+                },
+                payload=payload
+            )
+        else:
+            log.WARN(response["details"])
+            return RESPONSE_FACTORY().get(
+                status=response["response"],
+                response=response["details"],
+                scopes={
+                    response["scope"]: response["response"]
+                },
+                payload={}
+            )
