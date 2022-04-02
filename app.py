@@ -1,6 +1,3 @@
-import json
-import sys
-
 from flask import Flask, jsonify, redirect, request, send_from_directory
 from flask_cors import CORS
 # from logsmith import log
@@ -43,6 +40,7 @@ def account_login_request():
         request_data=request_data
     )
     return response
+
 
 if __name__ == '__main__':
     app.run(debug=True)
