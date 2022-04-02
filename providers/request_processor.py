@@ -19,8 +19,10 @@ log = log()
 log.configure(ENV="DEV", logfile="logs", console_only=True)
 
 class REQUEST_PROCESSOR:
+
     def __init__(self) -> None:
         pass
+
 
     def new_registration_request_processor(self, request_data):
 
@@ -57,6 +59,70 @@ class REQUEST_PROCESSOR:
                     },
                     payload={}
                 )
+        else:
+            log.WARN(response["details"])
+            return RESPONSE_FACTORY().get(
+                status=response["response"],
+                response=response["details"],
+                scopes={
+                    response["scope"]: response["response"]
+                },
+                payload={}
+            )
+
+
+    def account_verification_request_processor(self, request_data):
+
+        response, profile = AUTHLIB().verify(
+            mailID=request_data["email"],
+            user_supplied_secret=request_data["otp"]
+        )
+
+        if response == AL_RC.ALR14:
+            response = REGISTER().register_verified_profile(
+                verified_profile=profile
+            )
+
+            if response == RG_RC.RPR01:
+                VERIFICATION_MAILER = MAILER(mailer_mode=CONTENT_FACTORY.VERIFIED_MAIL)
+                VERIFICATION_MAILER.prepare_mail(payload=request_data["email"])
+                response = VERIFICATION_MAILER.send_mail(request_data["email"])
+
+                if response == ML_RC.MLS01:
+                    log.INFO(response["details"])
+                    return RESPONSE_FACTORY().get(
+                        status=response["response"],
+                        response=response["details"],
+                        scopes={
+                            AL_RC.ALR14["scope"]: AL_RC.ALR14["response"],
+                            RG_RC.RPR01["scope"]: RG_RC.RPR01["response"],
+                            ML_RC.MLS01["scope"]: ML_RC.MLS01["response"]
+                        },
+                        payload={}
+                    )
+                else:
+                    log.WARN(response["details"])
+                    return RESPONSE_FACTORY().get(
+                        status=response["response"],
+                        response=response["details"],
+                        scopes={
+                            AL_RC.ALR02["scope"]: AL_RC.ALR02["response"],
+                            RG_RC.RPR01["scope"]: RG_RC.RPR01["response"],
+                            ML_RC.MLS02["scope"]: ML_RC.MLS02["response"]
+                        },
+                        payload={}
+                    )
+            else:
+                log.WARN(response["details"])
+                return RESPONSE_FACTORY().get(
+                    status=response["response"],
+                    response=response["details"],
+                    scopes={
+                        AL_RC.ALR14["scope"]: AL_RC.ALR14["response"],
+                        response["scope"]: response["response"]
+                    },
+                    payload={}
+                )          
         else:
             log.WARN(response["details"])
             return RESPONSE_FACTORY().get(
