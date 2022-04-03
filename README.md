@@ -84,6 +84,7 @@ PAYLOAD:  {
            "email": {email},
            "password: {password}
           }
+```
 
 Run the demo using `cURL` by replacing the values of email, password.
 ```
