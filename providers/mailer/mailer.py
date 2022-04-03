@@ -9,7 +9,7 @@ from providers.mailer.content import CONTENT_FACTORY
 from providers.mailer.standards.return_codes import RETURN_CODES
 
 # Import Server Configurations
-configObject = JSONConfigParser(configFilePath="server-config.json")
+configObject = JSONConfigParser(configFilePath="configs/server-config.json")
 __mailer_server_configs = configObject.getConfigurations()
 
 port = __mailer_server_configs['port']
