@@ -33,10 +33,10 @@ Use the following Endpoint, Payload and Header to Generate OTP.
 ENDPOINT: {url}/register/generate
 METHOD:   POST
 PAYLOAD:  {
-           "email": {email},
-           "name" : {name},
-           "password: {password}
-          }
+    "email": {email},
+    "name" : {name},
+    "password: {password}
+  }
 ```
 Run the demo using `cURL` by replacing the values of email, password and name.
 
