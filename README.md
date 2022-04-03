@@ -139,19 +139,15 @@ Replace the Default Mail, Name and Password with the ones you want to test
     "password": "Password"
 }
 ```
-
-Run the End-to-End Registration & Login Flows with custom user data.
+Run demos by loading custom user data.
 ```
+// Run End-to-End Registration & Login Flows with custom user data.
 make load-user-and-run-demo
-```
 
-Run the Registration Demo Individually with custom user data
-```
+// Run the Registration Demo with custom user data
 make load-user-and-run-registration
-```
 
-Run the Login Demo Individually with custom user data
-```
+// Run the Login Demo with custom user data
 make load-user-and-run-login
 ```
 
