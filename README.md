@@ -16,6 +16,8 @@ Setup the Project
 ```
 make build
 ```
+This will set-up the project for you - installing python dependancies and also will setup the Mailer Configurations with credentials.
+
 ## Running Flask-App Demo
 
 Start the flask server.
