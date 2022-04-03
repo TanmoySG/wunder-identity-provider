@@ -1,0 +1,4 @@
+{
+    "verified-mail-template-file" : "emailTemplates/otp_verified_template.html",
+    "otp-genertation-template-file" : "emailTemplates/otp_generation_template.html"
+}

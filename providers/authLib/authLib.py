@@ -1,13 +1,11 @@
-import uuid
-
 from logsmith import log
 
-from handlers.requestHandler import AUTH_REQUEST
-from standards.return_codes import RETURN_CODES
+from providers.authLib.handlers.requestHandler import AUTH_REQUEST
+from providers.authLib.standards.return_codes import RETURN_CODES
 
-#Initiate Logging
-log = log()
-log.configure(console_only=True, ENV="Dev")
+# #Initiate Logging
+# log = log()
+# log.configure(console_only=True, ENV="Dev")
 
 
 class AUTHLIB:
@@ -26,9 +24,9 @@ class AUTHLIB:
         )
 
         if response_code == RETURN_CODES.ALR01:
-            return RETURN_CODES.ALR01["details"]
+            return RETURN_CODES.ALR01, ""
         elif response_code == RETURN_CODES.ALR02 or response_code == RETURN_CODES.ALR03:
-            return generated_otp
+            return response_code, generated_otp
 
 
     def verify(self, mailID, user_supplied_secret):
@@ -38,15 +36,15 @@ class AUTHLIB:
         )
 
         if response_code == RETURN_CODES.ALR11:
-            return response_code["details"]
+            return response_code, {}
         elif response_code == RETURN_CODES.ALR12:
             regenerated_otp = response_object
-            return regenerated_otp
+            return response_code, regenerated_otp
         elif response_code == RETURN_CODES.ALR13:
-            return response_code["details"]
+            return response_code, {}
         elif response_code == RETURN_CODES.ALR14:
             verified_profile = response_object
-            return verified_profile
+            return response_code, verified_profile
         elif response_code == RETURN_CODES.ALR15:
             regenerated_otp = response_object
-            return regenerated_otp
+            return response_code, regenerated_otp

@@ -136,5 +136,7 @@ users.json
 templates.json
 /test
 dataFiles/authLibProfiles.db
-.vscode
+/.vscode/*
+/.vscode/settings.json
 .vscode/settings.json
+apper.py

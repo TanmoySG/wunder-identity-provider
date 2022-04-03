@@ -1,0 +1,4 @@
+{
+    "jwt-algorithm" : "HS512",
+    "jwt-secret" : "default_random_secret"
+}

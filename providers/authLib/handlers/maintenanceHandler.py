@@ -5,7 +5,7 @@ from configPy import JSONConfigParser
 from logsmith import log
 
 # Import Configurations
-configObject = JSONConfigParser(configFilePath=".configs/datafiles.config.json")
+configObject = JSONConfigParser(configFilePath="configs/datafiles.config.json")
 configurations = configObject.getConfigurations()
 
 # Initiate Logging
