@@ -1,4 +1,4 @@
-build:
+setup:
 	@pip install -r requirements.txt
 	@read -p "Enter Port: " port; \
 	read -p "Enter Mail-Server: " server; \
@@ -61,11 +61,3 @@ teardown:
 	@echo {} > dataFiles/authlib.json
 	@echo {} > dataFiles/wunder_profiles_store.json
 	@echo Resources Torn Down
-
-run-api-tests:
-	@echo **This is a Demo, enter only testing credentials.
-	@read -p "Enter Email: " mail; \
-	read -p "Enter Name: " pw; \
-	read -p "Enter Password: " name; \
-	req_data={\"email\" : \"$$mail\", \"password\" : \"$$pw\", \"name\" : \"$$name\"} ;\
-	curl --request POST --url http://127.0.0.1:5000/register/generate --header 'content-type: application/json' --data \'$$req_data\'

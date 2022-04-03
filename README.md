@@ -25,20 +25,51 @@ Start the flask server.
 flask run
 ```
 
-### Registration - Generate OTP Demo
+### Registration - Generate OTP
 
 Run the demo using `cURL` by replacing the values of email, password and name.
 ```
-ENDPOINT: {url}/register/generate
+ENDPOINT: {url}/register/verify
 METHOD:   POST
 
 curl --request POST \
-  --url https://url.com/register/generate \
+  --url http://{url}/register/generate \
   --header 'content-type: application/json' \
   --data '{
   "email": "jane@doe.com",
   "name": "Jane Doe",
   "password": "123456"
+}'
+```
+### Registration - Verify OTP
+
+Run the demo using `cURL` by replacing the values of email, OTP recieved in your mail, within 90 seconds.
+```
+ENDPOINT: {url}/register/generate
+METHOD:   POST
+
+curl --request POST \
+  --url http://{url}/register/verify \
+  --header 'content-type: application/json' \
+  --data '{
+  "email": "jane@doe.com",
+  "otp" : "oOTtPp"
+}'
+```
+
+### Login
+
+Run the demo using `cURL` by replacing the values of email, password.
+```
+ENDPOINT: {url}/login
+METHOD:   POST
+
+curl --request POST \
+  --url http://{url}/login \
+  --header 'content-type: application/json' \
+  --data '{
+  "email": "jane@doe.com",
+  "password" : "123456"
 }'
 ```
 
