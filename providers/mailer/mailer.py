@@ -18,7 +18,7 @@ sender = __mailer_server_configs['sender']
 password = __mailer_server_configs['password']
 
 # Import Mail Templates Configurations
-configObject = JSONConfigParser(configFilePath=".configs/mailer.config.json")
+configObject = JSONConfigParser(configFilePath="configs/mailer.config.json")
 tempates_config = configObject.getConfigurations()
 
 

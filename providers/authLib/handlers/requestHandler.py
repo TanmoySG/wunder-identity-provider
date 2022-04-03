@@ -10,7 +10,7 @@ from providers.authLib.handlers.generators import HASH_SECRET, OTP, TIMESTAMP, U
 from providers.authLib.standards.return_codes import RETURN_CODES as RC
 
 # Import Configurations
-configObject = JSONConfigParser(configFilePath=".configs/datafiles.config.json")
+configObject = JSONConfigParser(configFilePath="configs/datafiles.config.json")
 configurations = configObject.getConfigurations()
 
 

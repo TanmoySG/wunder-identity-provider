@@ -8,7 +8,7 @@ from providers.registrationProvider.standards.return_codes import RETURN_CODES
 
 
 # Import Configurations
-configObject = JSONConfigParser(configFilePath=".configs/datafiles.config.json")
+configObject = JSONConfigParser(configFilePath="configs/datafiles.config.json")
 configurations = configObject.getConfigurations()
 
 

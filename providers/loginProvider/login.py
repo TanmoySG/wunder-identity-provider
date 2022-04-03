@@ -9,11 +9,11 @@ from providers.loginProvider.handlers.payload import PAYLOAD
 from providers.loginProvider.standards.return_codes import RETURN_CODES
 
 # Import Configurations
-configObject = JSONConfigParser(configFilePath=".configs/datafiles.config.json")
+configObject = JSONConfigParser(configFilePath="configs/datafiles.config.json")
 configurations = configObject.getConfigurations()
 
 # JWT Configs
-jwtconfigObject = JSONConfigParser(configFilePath=".configs/jwt.config.json")
+jwtconfigObject = JSONConfigParser(configFilePath="configs/jwt.config.json")
 jwtConfigurations = jwtconfigObject.getConfigurations()
 
 
