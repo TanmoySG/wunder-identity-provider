@@ -29,7 +29,7 @@ flask run
 
 Run the demo using `cURL` by replacing the values of email, password and name.
 ```
-ENDPOINT: {url}/register/verify
+ENDPOINT: {url}/register/generate
 METHOD:   POST
 
 curl --request POST \
@@ -45,7 +45,7 @@ curl --request POST \
 
 Run the demo using `cURL` by replacing the values of email, OTP recieved in your mail, within 90 seconds.
 ```
-ENDPOINT: {url}/register/generate
+ENDPOINT: {url}/register/verify
 METHOD:   POST
 
 curl --request POST \
