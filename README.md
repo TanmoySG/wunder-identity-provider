@@ -33,10 +33,10 @@ Use the following Endpoint, Payload and Header to Generate OTP.
 ENDPOINT: {url}/register/generate
 METHOD:   POST
 PAYLOAD:  {
-    "email": {email},
-    "name" : {name},
-    "password: {password}
-  }
+            "email": {email},
+            "name" : {name},
+            "password: {password}
+          }
 ```
 Run the demo using `cURL` by replacing the values of email, password and name.
 
@@ -57,10 +57,10 @@ Use the following Endpoint, Payload and Header for Verification.
 ```
 ENDPOINT: {url}/register/verify
 METHOD:   POST
-PAYLOAD: {
-          "email": {email},
-          "otp" :  {OTP}
-         }
+PAYLOAD:  {
+            "email": {email},
+            "otp" :  {OTP}
+          }
 ```
 Run the demo using `cURL` by replacing the values of email, OTP recieved in your mail, within 90 seconds.
 ```
@@ -81,8 +81,8 @@ Use the following Endpoint, Payload and Header to Log-in.
 ENDPOINT: {url}/login
 METHOD:   POST
 PAYLOAD:  {
-           "email": {email},
-           "password: {password}
+            "email": {email},
+            "password: {password}
           }
 ```
 
