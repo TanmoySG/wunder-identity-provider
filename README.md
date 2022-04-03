@@ -42,12 +42,18 @@ curl --request POST \
 }'
 ```
 ### Registration - Verify OTP
+Use the following Endpoint, Payload and Header for Verification.
 
-Run the demo using `cURL` by replacing the values of email, OTP recieved in your mail, within 90 seconds.
 ```
 ENDPOINT: {url}/register/verify
 METHOD:   POST
-
+PAYLOAD: {
+  "email": "[email]",
+  "otp" : "[OTP]"
+}
+```
+Run the demo using `cURL` by replacing the values of email, OTP recieved in your mail, within 90 seconds.
+```
 curl --request POST \
   --url http://{url}/register/verify \
   --header 'content-type: application/json' \
