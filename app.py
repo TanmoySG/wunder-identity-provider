@@ -1,3 +1,4 @@
+from crypt import methods
 from flask import Flask, request
 from flask_cors import CORS
 
@@ -5,6 +6,10 @@ from providers.request_processor import REQUEST_PROCESSOR
 
 app = Flask(__name__)
 CORS(app)
+
+@app.route("/", methods=["POST"])
+def index():
+    return "<h1>Welcome to wIP API</h1>"
 
 
 # New Registration Endpoint

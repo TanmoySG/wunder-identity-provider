@@ -9,6 +9,15 @@ setup:
 	echo "Appyling Mailer Configurations..." ;\
 	echo $$server_config | jq '.' > configs/server_config.json
 
+slim-setup:
+	@read -p "Enter Port: " port; \
+	read -p "Enter Mail-Server: " server; \
+	read -p "Enter Password: " password; \
+	read -p "Enter Sender: " sender; \
+	server_config={\"port\":\"$$port\",\"mail-server\":\"$$server\",\"password\":\"$$password\",\"sender\":\"$$sender\"} ;\
+	echo $$server_config | jq '.' ;\
+	echo "Appyling Mailer Configurations..." ;\
+	echo $$server_config | jq '.' > configs/server_config.json
 
 run-demo:
 	@make -s teardown
