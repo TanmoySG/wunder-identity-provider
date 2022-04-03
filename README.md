@@ -27,11 +27,20 @@ flask run
 
 ### Registration - Generate OTP
 
-Run the demo using `cURL` by replacing the values of email, password and name.
+Use the following Endpoint, Payload and Header to Generate OTP.
+
 ```
 ENDPOINT: {url}/register/generate
 METHOD:   POST
+PAYLOAD:  {
+           "email": {email},
+           "name" : {name},
+           "password: {password}
+          }
+```
+Run the demo using `cURL` by replacing the values of email, password and name.
 
+```
 curl --request POST \
   --url http://{url}/register/generate \
   --header 'content-type: application/json' \
@@ -42,15 +51,16 @@ curl --request POST \
 }'
 ```
 ### Registration - Verify OTP
+
 Use the following Endpoint, Payload and Header for Verification.
 
 ```
 ENDPOINT: {url}/register/verify
 METHOD:   POST
 PAYLOAD: {
-  "email": "[email]",
-  "otp" : "[OTP]"
-}
+          "email": {email},
+          "otp" :  {OTP}
+         }
 ```
 Run the demo using `cURL` by replacing the values of email, OTP recieved in your mail, within 90 seconds.
 ```
@@ -65,11 +75,18 @@ curl --request POST \
 
 ### Login
 
-Run the demo using `cURL` by replacing the values of email, password.
+Use the following Endpoint, Payload and Header to Log-in.
+
 ```
 ENDPOINT: {url}/login
 METHOD:   POST
+PAYLOAD:  {
+           "email": {email},
+           "password: {password}
+          }
 
+Run the demo using `cURL` by replacing the values of email, password.
+```
 curl --request POST \
   --url http://{url}/login \
   --header 'content-type: application/json' \
@@ -78,6 +95,9 @@ curl --request POST \
   "password" : "123456"
 }'
 ```
+
+## Manual Demos
+You can Run Manual demos without running the flask server
 
 ### Run Demos with default Demo User Data
 
