@@ -7,9 +7,13 @@ from providers.request_processor import REQUEST_PROCESSOR
 app = Flask(__name__)
 CORS(app)
 
-@app.route("/", methods=["POST"])
+@app.route("/", methods=["GET", "POST"])
 def index():
-    return "<h1>Welcome to wIP API</h1>"
+    return {
+        "status" : "success",
+        "message" : "Welcome to wunder-Identity-Provider API!",
+        "documentation" : "https://github.com/TanmoySG/wunder-identity-provider/tree/dev/"
+    }
 
 
 # New Registration Endpoint
