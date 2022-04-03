@@ -14,7 +14,7 @@ The Identity of a User is uniquely defined (primarily) by the user's email ID, w
 
 Setup the Project
 ```
-make build
+make setup
 ```
 This will set-up the project for you - installing python dependancies and also will setup the Mailer Configurations with credentials.
 
