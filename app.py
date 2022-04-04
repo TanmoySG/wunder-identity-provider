@@ -45,7 +45,7 @@ def account_login_request():
     return response
 
 
-@app.route("/stream/logs", methods=["POST", "GET"])
+@app.route("/get/logs", methods=["POST", "GET"])
 def stream_logs():
     reaponse_logs = {
         "status": "success",
