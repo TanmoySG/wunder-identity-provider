@@ -1,4 +1,3 @@
-from crypt import methods
 from flask import Flask, request
 from flask_cors import CORS
 
@@ -44,6 +43,18 @@ def account_login_request():
         request_data=request_data
     )
     return response
+
+
+@app.route("/stream/logs", methods=["POST", "GET"])
+def stream_logs():
+    reaponse_logs = {
+        "status": "success",
+        "logs" : []
+    }
+    with open("./logs", "r") as logObject:
+        for logline in logObject.readlines():
+            reaponse_logs["logs"].append(logline)
+    return reaponse_logs
 
 
 if __name__ == '__main__':
