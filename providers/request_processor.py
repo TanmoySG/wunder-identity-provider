@@ -16,7 +16,7 @@ from providers.registrationProvider.standards.return_codes import RETURN_CODES a
 from providers.response_factory import RESPONSE_FACTORY
 
 log = log()
-log.configure(ENV="DEV", logfile="logs", console_only=True)
+log.configure(ENV="DEV", logfile="logs", console_only=False)
 
 class REQUEST_PROCESSOR:
 
