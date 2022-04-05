@@ -2,7 +2,7 @@
 name: Component Development
 about: Issue for tracking Development of Low Level Components of stand-alone Features.
 title: "[Component] "
-labels: architectural design, component, enhancement
+labels: component, enhancement
 assignees: TanmoySG
 
 ---
