@@ -62,6 +62,24 @@ What Else ? [ Add new above ^ ]
 - Alpha Numeric OTP - 6 Digit, prep.
 - _TBD_
 
+# Versioning 
+
+
+A proper versioning system that should be used in this project is
+
+```
+Major.Minor.Patch-target
+```
+
+In the Above 
+
+- **Major** - Major Feature Additions, Breaking API Changes and other Major Changes that can effect the dependant systems.
+- **Minor** - Minor Feature Additions, Backward Compatible, Usage Experience Enhancements and Minor Changes.
+- **Patch** - Bug Fixes, Backward Compatible and Enhancement Fixes and Changes.
+- **target** - Build Targets (OS Specific/OS Version Specific/Architecture Specific Targets) or pre-releases (beta/alpha) or audience/user Targets (general/Pro/internal/etc.)
+
+[Refer to semver.org](https://semver.org/)
+
 # Future
 
 - Goal is to replace `authlib`in the future and enable profiles-level verification and remove intermediate step [Plan TBD]
