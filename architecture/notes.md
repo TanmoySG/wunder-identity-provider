@@ -80,6 +80,11 @@ In the Above
 
 [Refer to semver.org](https://semver.org/)
 
+
+# Release and Deployment Strategy
+
+Refer Issue [#79](https://github.com/TanmoySG/wunder-identity-provider/issues/79)
+
 # Future
 
 - Goal is to replace `authlib`in the future and enable profiles-level verification and remove intermediate step [Plan TBD]
