@@ -1,4 +1,4 @@
-name: GitHub Release on Tag
+name: Release on Tag
 
 on:
   push:
