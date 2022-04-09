@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  wunderidentityprovider:
+    image: wunderidentityprovider
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:5000
+    volumes:
+      - ${PWD}/configs/server-config.json:/app/configs/server-config.json
