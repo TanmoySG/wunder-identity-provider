@@ -5,4 +5,4 @@ SENDER=$4
 
 SERVER_CONFIG={\"port\":\"$PORT\",\"mail-server\":\"$SERVER\",\"password\":\"$PASSWORD\",\"sender\":\"$SENDER\"} 
 
-echo $SERVER_CONFIG | jq '.' > configs/server-config.json
+echo $SERVER_CONFIG | jq '.' > server-config.json
