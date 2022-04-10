@@ -1,5 +1,7 @@
 # wunder Identity Provider v0.1
 
+[![Containerize and Publish on Tagging](https://github.com/TanmoySG/wunder-identity-provider/actions/workflows/containerize-and-publish.yml/badge.svg)](https://github.com/TanmoySG/wunder-identity-provider/actions/workflows/containerize-and-publish.yml) [![Release on Tagging](https://github.com/TanmoySG/wunder-identity-provider/actions/workflows/release-on-github.yml/badge.svg)](https://github.com/TanmoySG/wunder-identity-provider/actions/workflows/release-on-github.yml) 
+
 The wunder Identity Provider is the primary IAM - Identity and Access Management platform for all wunder Platform Products. The idea is to unify the identity and access across the board for more coherent and hassle-free single-point service and data access.
 
 The wIP Architecture has several moving parts, but broadly can be consolidated for the end-user into two primary access/interaction points - `registration` and `login`. 
