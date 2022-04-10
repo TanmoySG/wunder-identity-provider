@@ -1,16 +1,24 @@
 # wunder Identity Provider v0.1
 
+[![Containerize and Publish on Tagging](https://github.com/TanmoySG/wunder-identity-provider/actions/workflows/containerize-and-publish.yml/badge.svg)](https://github.com/TanmoySG/wunder-identity-provider/actions/workflows/containerize-and-publish.yml) [![Release on Tagging](https://github.com/TanmoySG/wunder-identity-provider/actions/workflows/release-on-github.yml/badge.svg)](https://github.com/TanmoySG/wunder-identity-provider/actions/workflows/release-on-github.yml) 
+
 The wunder Identity Provider is the primary IAM - Identity and Access Management platform for all wunder Platform Products. The idea is to unify the identity and access across the board for more coherent and hassle-free single-point service and data access.
 
 The wIP Architecture has several moving parts, but broadly can be consolidated for the end-user into two primary access/interaction points - `registration` and `login`. 
 
 The Architectural and Design details are documented [here](./architecture/README.md).
 
+<!--
 ## Identity
 
 The Identity of a User is uniquely defined (primarily) by the user's email ID, while the uID (system generated) and username (user defined) are used for secondary and tertiary identification. The (rough) ID Structure, that is stored and used can be found [here](./architecture/README.md#identity-specification). 
+-->
 
-## Usage 
+## Usage
+
+wIP can be used locally in the following ways.
+
+### Running wIP Locally
 
 Setup the Project
 ```
@@ -18,12 +26,48 @@ make setup
 ```
 This will set-up the project for you - installing python dependancies and also will setup the Mailer Configurations with credentials.
 
-## Running Flask-App Demo
 
 Start the flask server.
 ```
 flask run
 ```
+
+### Running the wIP Container with Docker
+
+For Ease of Usage, a Docker Container is published on GitHub Package Registry. Since the whole app is Containerized, it can run without Flask or other depedancies installed on the Host Machine, it only requires Docker installed locally.
+
+Pull the Container
+```
+docker pull ghcr.io/tanmoysg/wunder-identity-provider:latest
+```
+The server configs need to be mounted onto the Container for the Mailer to work. To do so run the `setup.sh` script by passing the required parameters.
+```
+./setup.sh [SMTP PORT] [SMTP SERVER ADDRESS] [MAIL PASSWORD] [MAIL ADDRESS]
+```
+This Generates the `server-config.json` file in the present working directory.
+
+
+Run the container using `docker run` command by mounting the server-configs and exposing the ports for local usage.
+```
+docker run -p 5000:5000 -v ${PWD}/server-config.json:/app/configs/server-config.json ghcr.io/tanmoysg/wunder-identity-provider:latest
+```
+Alernatively, (and popularly) `docker-compose` is used to run containers in a easy way. In this repo, you'll find a `docker-compose.yml` file that contains all cofigurations to run the docker container, without the hassle of doing all the mappings from the commandline. To use docker compose, go to the directory with the `docker-compose.yml` file and run
+```
+docker-compose up
+```
+This will run the docker container locally and should be ready to use!
+
+Please Note, that the Docker container once torndown, the data inside it (created while running it) also gets deleted as no persistent volume is bound to it. To make the data persistent, you can additionally mount a [persistent docker volume](https://www.google.com/search?q=persistent+docker+volume&oq=persistent+docker+&aqs=chrome.0.0i20i263i512j0i512j69i57j0i512j0i22i30l6.3001j1j9&sourceid=chrome&ie=UTF-8) while running the container.
+
+## API Endpoints
+
+Once the container (or the flask app) is up and running locally, the following API Endpoints can be used to interact with `wunder Identity Provider`
+
+<!--
+- `/register/generate/` 
+- `/register/verify/`
+- `/login/`
+-->
 
 ### Registration - Generate OTP
 
@@ -38,7 +82,7 @@ PAYLOAD:  {
             "password: {password}
           }
 ```
-Run the demo using `cURL` by replacing the values of email, password and name.
+Run a demo registration using `cURL` by replacing the values of email, password and name.
 
 ```
 curl --request POST \
@@ -50,6 +94,7 @@ curl --request POST \
   "password": "123456"
 }'
 ```
+
 ### Registration - Verify OTP
 
 Use the following Endpoint, Payload and Header for Verification.
@@ -62,7 +107,7 @@ PAYLOAD:  {
             "otp" :  {OTP}
           }
 ```
-Run the demo using `cURL` by replacing the values of email, OTP recieved in your mail, within 90 seconds.
+Run a demo verification using `cURL` by replacing the values of email, OTP recieved in your mail, within 90 seconds.
 ```
 curl --request POST \
   --url http://{url}/register/verify \
@@ -95,65 +140,4 @@ curl --request POST \
   "email": "jane@doe.com",
   "password" : "123456"
 }'
-```
-
-## Manual Demos
-You can Run Manual demos without running the flask server
-
-### Run Demos with default Demo User Data
-
-Default Sample User Data
-```
-Name: Tanmoy
-Mail: tanmoysps@gmail.com
-Password: 123456
-```
-
-Running the End-to-End Registration & Login Flows
-```
-make run-demo
-```
-
-Registration and Login Demos can also be run idividually.
-```
-// To run Registration Demo
-make run-registration-demo
-
-// To run Login Demo
-make run-login-demo
-```
-
-
-### Run Demos with Custom User Data
-
-You can run the demos with custom User Data. To do so, edit the `demo/demo_user.json`.
-
-```
-vi demo/demo_user.json
-```
-Replace the Default Mail, Name and Password with the ones you want to test
-```
-{
-    "email": "Enter Mail Here",
-    "name": "Name of User",
-    "password": "Password"
-}
-```
-Run demos by loading custom user data.
-```
-// Run End-to-End Registration & Login Flows with custom user data.
-make load-user-and-run-demo
-
-// Run the Registration Demo with custom user data
-make load-user-and-run-registration
-
-// Run the Login Demo with custom user data
-make load-user-and-run-login
-```
-
-### Teardown Resources
-
-To Teardown resources created while running Demos, run
-```
-make teardown
 ```

@@ -2,11 +2,8 @@ version: '3.4'
 
 services:
   wunderidentityprovider:
-    image: wunderidentityprovider
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+    image: ghcr.io/tanmoysg/wunder-identity-provider:latest
     ports:
       - 5000:5000
     volumes:
-      - ${PWD}/configs/server-config.json:/app/configs/server-config.json
+      - ${PWD}/server-config.json:/app/configs/server-config.json
