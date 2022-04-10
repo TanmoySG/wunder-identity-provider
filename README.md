@@ -16,6 +16,8 @@ The Identity of a User is uniquely defined (primarily) by the user's email ID, w
 
 ## Usage
 
+wIP can be used locally in the following ways.
+
 ### Running wIP Locally
 
 Setup the Project
@@ -61,9 +63,11 @@ Please Note, that the Docker container once torndown, the data inside it (create
 
 Once the container (or the flask app) is up and running locally, the following API Endpoints can be used to interact with `wunder Identity Provider`
 
+<!--
 - `/register/generate/` 
 - `/register/verify/`
 - `/login/`
+-->
 
 ### Registration - Generate OTP
 
