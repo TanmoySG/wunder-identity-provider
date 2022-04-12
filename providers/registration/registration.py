@@ -2,9 +2,9 @@ import json
 
 from configPy import JSONConfigParser
 
-from providers.registrationProvider.handlers.generators import ACCESS_TOKEN, REGISTRATION_TIME, USERID
-from providers.registrationProvider.handlers.profile import PROFILE
-from providers.registrationProvider.standards.return_codes import RETURN_CODES
+from providers.registration.handlers.generators import ACCESS_TOKEN, REGISTRATION_TIME, USERID
+from providers.registration.handlers.profile import PROFILE
+from providers.registration.standards.return_codes import RETURN_CODES
 
 
 # Import Configurations

@@ -3,15 +3,15 @@ from logsmith import log
 from providers.authLib.authLib import AUTHLIB
 from providers.authLib.standards.return_codes import RETURN_CODES as AL_RC
 
-from providers.loginProvider.login import LOGIN
-from providers.loginProvider.standards.return_codes import RETURN_CODES as LG_RC
+from providers.login.login import LOGIN
+from providers.login.standards.return_codes import RETURN_CODES as LG_RC
 
 from providers.mailer.content import CONTENT_FACTORY
 from providers.mailer.mailer import MAILER
 from providers.mailer.standards.return_codes import RETURN_CODES as ML_RC
 
-from providers.registrationProvider.registration import REGISTER
-from providers.registrationProvider.standards.return_codes import RETURN_CODES as RG_RC
+from providers.registration.registration import REGISTER
+from providers.registration.standards.return_codes import RETURN_CODES as RG_RC
 
 from providers.response_factory import RESPONSE_FACTORY
 

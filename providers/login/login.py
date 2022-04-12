@@ -4,9 +4,9 @@ import re
 
 from configPy import JSONConfigParser
 
-from providers.loginProvider.handlers.jwt import JWT
-from providers.loginProvider.handlers.payload import PAYLOAD
-from providers.loginProvider.standards.return_codes import RETURN_CODES
+from providers.login.handlers.jwt import JWT
+from providers.login.handlers.payload import PAYLOAD
+from providers.login.standards.return_codes import RETURN_CODES
 
 # Import Configurations
 configObject = JSONConfigParser(configFilePath="configs/datafiles.config.json")
