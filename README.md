@@ -6,12 +6,14 @@ The wunder Identity Provider is the primary Identity (and to some extent, Access
 
 The wIP Architecture has several moving parts, but broadly can be consolidated for the end-user into two primary access/interaction points - registration and login. 
 
+## Architecture and Design of wunder Identity Provider
+
 The Architectural and Design details are documented [here](./architecture/README.md).
 
 
 ## Usage
 
-wIP can be used locally in the following ways.
+wunder Identity Provider can be used locally in the following ways.
 
 ### Running wIP Locally
 
@@ -190,3 +192,11 @@ The JWT can be used by the Admin Clients to access and manipulate Admin-level Da
   "aat": [Admin Access Token]
 }
 ```
+
+## Links
+
+- [Architectural Details](./architecture/README.md)
+- [Standard Return Codes](./architecture/STANDARD_RETURN_CODES.md)
+- [Notes, Workflow Design and Observations](./architecture/notes.md)
+- [Release Strategy - Tracked in Issue #79](https://github.com/TanmoySG/wunder-identity-provider/issues/79)
+- [Some Issues and PRs tracking Architectural Designs Developments](https://github.com/TanmoySG/wunder-identity-provider/issues?q=label%3A%22architectural+design%22)
