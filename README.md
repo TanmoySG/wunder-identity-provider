@@ -1,22 +1,19 @@
-# wunder Identity Provider v0.1
+# wunder Identity Provider v0.1.1-alpha
 
 [![Containerize and Publish on Tagging](https://github.com/TanmoySG/wunder-identity-provider/actions/workflows/containerize-and-publish.yml/badge.svg)](https://github.com/TanmoySG/wunder-identity-provider/actions/workflows/containerize-and-publish.yml) [![Release on Tagging](https://github.com/TanmoySG/wunder-identity-provider/actions/workflows/release-on-github.yml/badge.svg)](https://github.com/TanmoySG/wunder-identity-provider/actions/workflows/release-on-github.yml) 
 
-The wunder Identity Provider is the primary IAM - Identity and Access Management platform for all wunder Platform Products. The idea is to unify the identity and access across the board for more coherent and hassle-free single-point service and data access.
+The wunder Identity Provider is the primary Identity (and to some extent, Access) Management platform for all wunder Platform Products. The idea is to unify the identity and access across the board for more coherent and hassle-free single-point service and data access.
 
-The wIP Architecture has several moving parts, but broadly can be consolidated for the end-user into two primary access/interaction points - `registration` and `login`. 
+The wIP Architecture has several moving parts, but broadly can be consolidated for the end-user into two primary access/interaction points - registration and login. 
+
+## Architecture and Design
 
 The Architectural and Design details are documented [here](./architecture/README.md).
 
-<!--
-## Identity
-
-The Identity of a User is uniquely defined (primarily) by the user's email ID, while the uID (system generated) and username (user defined) are used for secondary and tertiary identification. The (rough) ID Structure, that is stored and used can be found [here](./architecture/README.md#identity-specification). 
--->
 
 ## Usage
 
-wIP can be used locally in the following ways.
+wunder Identity Provider can be used locally in the following ways.
 
 ### Running wIP Locally
 
@@ -62,12 +59,6 @@ Please Note, that the Docker container once torndown, the data inside it (create
 ## API Endpoints
 
 Once the container (or the flask app) is up and running locally, the following API Endpoints can be used to interact with `wunder Identity Provider`
-
-<!--
-- `/register/generate/` 
-- `/register/verify/`
-- `/login/`
--->
 
 ### Registration - Generate OTP
 
@@ -141,3 +132,71 @@ curl --request POST \
   "password" : "123456"
 }'
 ```
+
+## API Response
+
+The Response from the system is unified across all endpoints and primarily consists of the following key -
+
+- status - Status of the Response | success or failed
+- response - A elaborate message representing the status | string
+- scopes - Scope of the Response and Components Involved in generating the response. List of Scopes ivolved and response of each component.
+- payload - Payload from Server containing any data transferred. Used only in cases where data other than status information is to be transferred.
+
+```
+{
+  "status" : "success",
+  "response" : "response",
+  "scopes": {},
+  "payload" : {}
+}
+```
+
+To learn more about scopes, the various scopes returned and their usage, in the API call's response refer [architecture/STANDARD_RETURN_CODES.md](./architecture/STANDARD_RETURN_CODES.md)
+
+### Response-Payload for Registration Requests
+
+For `registration/generate` and `registration/verify` the server sends no Payload back. Only Status and Response (message) are returned. For Eg. if a request already exists in authlib, and the user tries registering again, the following response if sent fom the server.
+```
+{
+  "payload": {},
+  "response": "Request Exists. Check your Mail.",
+  "scopes": {
+    "authlib.requests.register": "failure"
+  },
+  "status": "failure"
+}
+```
+
+### Response-Payload for Login Requests
+
+For `login` the server returns a payload containing the JWT and Username on successful verification.
+```
+{
+  "payload": {
+    "token": "S7kREr71AVpuJw...",
+    "username": "Jane Doe"
+  },
+  "response": "Account Verified. Login Successful.",
+  "scopes": {
+    "login.profile.verified": "success"
+  },
+  "status": "success"
+}
+```
+
+The JWT can be used by the Admin Clients to access and manipulate Admin-level Data, settings and other actions. The JWT-Payload contains 
+```
+{
+  "usr": [Email Address],
+  "uid": [User ID],
+  "aat": [Admin Access Token]
+}
+```
+
+## Links
+
+- [Architectural Details](./architecture/README.md)
+- [Standard Return Codes](./architecture/STANDARD_RETURN_CODES.md)
+- [Notes, Workflow Design and Observations](./architecture/notes.md)
+- [Release Strategy - Tracked in Issue #79](https://github.com/TanmoySG/wunder-identity-provider/issues/79)
+- [Some Issues and PRs tracking Architectural Designs Developments](https://github.com/TanmoySG/wunder-identity-provider/issues?q=label%3A%22architectural+design%22)
