@@ -131,7 +131,7 @@ curl --request POST \
 }'
 ```
 
-### API Response
+## API Response
 
 The Response from the system is unified across all endpoints and primarily consists of the following key -
 
@@ -151,8 +151,33 @@ The Response from the system is unified across all endpoints and primarily consi
 
 To learn more about scopes, the various scopes returned and their usage, in the API call's response refer [architecture/STANDARD_RETURN_CODES.md](./architecture/STANDARD_RETURN_CODES.md)
 
-- For `registration/generate` and `registration/verify` the server sends no Payload back. Only Status and Response (message) are returned.
-- For `login` the server returns a payload containing - 
+- For `registration/generate` and `registration/verify` the server sends no Payload back. Only Status and Response (message) are returned. For Eg. if a request already exists in authlib, and the user tries registering again, the following response if sent fom the server.
+```
+{
+  "payload": {},
+  "response": "Request Exists. Check your Mail.",
+  "scopes": {
+    "authlib.requests.register": "failure"
+  },
+  "status": "failure"
+}
+```
+- For `login` the server returns a payload containing the JWT and Username on successful verification.
+```
+{
+  "payload": {
+    "token": "S7kREr71AVpuJw...",
+    "username": "Jane Doe"
+  },
+  "response": "Account Verified. Login Successful.",
+  "scopes": {
+    "login.profile.verified": "success"
+  },
+  "status": "success"
+}
+```
+
+The JWT can be used by the Admin Clients to access and manipulate Admin-level Data, settings and other actions. The JWT-Payload contains 
 ```
 {
   "usr": [Email Address],
@@ -160,4 +185,3 @@ To learn more about scopes, the various scopes returned and their usage, in the 
   "aat": [Admin Access Token]
 }
 ```
-The Admin Access token can be used by the Admin Clients to manipulate Admin-level Data and settings.
