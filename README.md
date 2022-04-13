@@ -6,7 +6,7 @@ The wunder Identity Provider is the primary Identity (and to some extent, Access
 
 The wIP Architecture has several moving parts, but broadly can be consolidated for the end-user into two primary access/interaction points - registration and login. 
 
-## Architecture and Design of wunder Identity Provider
+## Architecture and Design
 
 The Architectural and Design details are documented [here](./architecture/README.md).
 
