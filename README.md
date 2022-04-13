@@ -151,7 +151,9 @@ The Response from the system is unified across all endpoints and primarily consi
 
 To learn more about scopes, the various scopes returned and their usage, in the API call's response refer [architecture/STANDARD_RETURN_CODES.md](./architecture/STANDARD_RETURN_CODES.md)
 
-- For `registration/generate` and `registration/verify` the server sends no Payload back. Only Status and Response (message) are returned. For Eg. if a request already exists in authlib, and the user tries registering again, the following response if sent fom the server.
+### Response-Payload for Registration and Login Requests
+
+For `registration/generate` and `registration/verify` the server sends no Payload back. Only Status and Response (message) are returned. For Eg. if a request already exists in authlib, and the user tries registering again, the following response if sent fom the server.
 ```
 {
   "payload": {},
@@ -162,7 +164,7 @@ To learn more about scopes, the various scopes returned and their usage, in the 
   "status": "failure"
 }
 ```
-- For `login` the server returns a payload containing the JWT and Username on successful verification.
+For `login` the server returns a payload containing the JWT and Username on successful verification.
 ```
 {
   "payload": {
