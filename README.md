@@ -199,4 +199,4 @@ The JWT can be used by the Admin Clients to access and manipulate Admin-level Da
 - [Standard Return Codes](./architecture/STANDARD_RETURN_CODES.md)
 - [Notes, Workflow Design and Observations](./architecture/notes.md)
 - [Release Strategy - Tracked in Issue #79](https://github.com/TanmoySG/wunder-identity-provider/issues/79)
-- [Some Issues and PRs tracking Architectural Designs Developments](https://github.com/TanmoySG/wunder-identity-provider/issues?q=label%3A%22architectural+design%22)
+- [Some Issues and PRs tracking Architectural Designs Developments](https://github.com/TanmoySG/wunder-identity-provider/issues?q=+label%3A%22architecture+%7C+design%22+)
