@@ -17,6 +17,7 @@ from providers.response_factory import RESPONSE_FACTORY
 
 log = Logsmith({})
 log.fetchConfigFromFile("configs/log.config.json")
+log.prepareMonitor()
 
 class REQUEST_PROCESSOR:
 

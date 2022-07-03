@@ -1,10 +1,10 @@
 {
     "env": "test",
-    "logfile": "logs.log",
+    "logfile": "./configs/log.log",
     "consoleOnly": false,
     "logStatementPattern": "[ {component} ~ {logLevel} ] : {message}",
     "logFormat": "json",
-    "monitorLogging": false,
+    "monitorLogging": true,
     "monitor": {
         "port": "8080",
         "server": "localhost",
