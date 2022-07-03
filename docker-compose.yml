@@ -1,19 +1,21 @@
 version: '3.4'
 
 services:
-  wunderidentityprovider:
-    image: ghcr.io/tanmoysg/wunder-identity-provider:latest
-    ports:
-      - 5000:5000
-    volumes:
-      - ${PWD}/configs/:/app/configs/
-
   monitor:
     image: ghcr.io/tanmoysg/logsmith-monitor:latest
     ports:
       - 8080:8080
     volumes:
       - monitorvolume:/usr/src/app/logfiles
+
+  wunderidentityprovider:
+    image: ghcr.io/tanmoysg/wunder-identity-provider:latest
+    depends_on:
+      - monitor
+    ports:
+      - 5000:5000
+    volumes:
+      - ${PWD}/configs/:/app/configs/
 
 volumes:
   monitorvolume:
