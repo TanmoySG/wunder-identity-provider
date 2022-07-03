@@ -37,11 +37,11 @@ Pull the Container
 ```
 docker pull ghcr.io/tanmoysg/wunder-identity-provider:latest
 ```
-The server configs need to be mounted onto the Container for the Mailer to work. To do so run the `setup.sh` script by passing the required parameters.
+The server configs and [logsmith configs, for logging](https://github.com/TanmoySG/logsmith#configurations-1) need to be mounted onto the Container for the Mailer and Logging to work. To generate the configs run the setup-config.sh script. This brings up the prompt to enter the required values.
 ```
-./setup.sh [SMTP PORT] [SMTP SERVER ADDRESS] [MAIL PASSWORD] [MAIL ADDRESS]
+./setup-config.sh
 ```
-This Generates the `server-config.json` file in the present working directory.
+This Generates the `server-config.json` file in the `configs` directory, and also gets the log.config.json in the same directory.
 
 
 Run the container using `docker run` command by mounting the server-configs and exposing the ports for local usage.
