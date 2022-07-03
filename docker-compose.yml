@@ -5,8 +5,12 @@ services:
     image: ghcr.io/tanmoysg/logsmith-monitor:latest
     ports:
       - 8080:8080
+    expose:
+      - 8080
     volumes:
       - monitorvolume:/usr/src/app/logfiles
+    networks:
+      - wundernetwork
 
   wunderidentityprovider:
     image: ghcr.io/tanmoysg/wunder-identity-provider:latest
@@ -16,6 +20,12 @@ services:
       - 5000:5000
     volumes:
       - ${PWD}/configs/:/app/configs/
+    networks:
+      - wundernetwork
+
+networks:
+  wundernetwork:
+    driver: bridge
 
 volumes:
   monitorvolume:
