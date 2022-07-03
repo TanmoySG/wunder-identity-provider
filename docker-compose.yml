@@ -6,4 +6,4 @@ services:
     ports:
       - 5000:5000
     volumes:
-      - ${PWD}/server-config.json:/app/configs/server-config.json
+      - ${PWD}/configs/server-config.json:/app/configs/server-config.json
