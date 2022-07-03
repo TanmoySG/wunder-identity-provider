@@ -1,4 +1,4 @@
-from logsmith import log
+from logsmith import Logsmith
 
 from providers.authLib.authLib import AUTHLIB
 from providers.authLib.standards.return_codes import RETURN_CODES as AL_RC
@@ -15,8 +15,8 @@ from providers.registration.standards.return_codes import RETURN_CODES as RG_RC
 
 from providers.response_factory import RESPONSE_FACTORY
 
-log = log()
-log.configure(ENV="DEV", logfile="logs", console_only=False)
+log = Logsmith({})
+log.fetchConfigFromFile("configs/log.config.json")
 
 class REQUEST_PROCESSOR:
 
