@@ -24,7 +24,7 @@ make setup
 This will set-up the project for you - installing python dependancies and also will setup the Mailer Configurations with credentials.
 
 
-Start the flask server.
+Before running the flask app, change the value of server from monitor to `localhost`. Once done, Start the flask server. 
 ```
 flask run
 ```
@@ -48,7 +48,7 @@ Run the container using `docker run` command by mounting the server-configs and 
 ```
 docker run -p 5000:5000 -v ${PWD}/server-config.json:/app/configs/server-config.json ghcr.io/tanmoysg/wunder-identity-provider:latest
 ```
-Alernatively, (and popularly) `docker-compose` is used to run containers in a easy way. In this repo, you'll find a `docker-compose.yml` file that contains all cofigurations to run the docker container, without the hassle of doing all the mappings from the commandline. To use docker compose, go to the directory with the `docker-compose.yml` file and run
+Alernatively, (and popularly) `docker-compose` is used to run containers in a easy way. In this repo, you'll find a `docker-compose.yml` file that contains all cofigurations to run the docker container, without the hassle of doing all the mappings from the commandline. To use docker compose, go to the directory with the `docker-compose.yml` file and run. It also spins up the monitor.
 ```
 docker-compose up
 ```

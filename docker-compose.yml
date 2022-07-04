@@ -3,10 +3,9 @@ version: '3.4'
 services:
   monitor:
     image: ghcr.io/tanmoysg/logsmith-monitor:latest
+    container_name: monitor
     ports:
-      - 8080:8080
-    expose:
-      - 8080
+      - "8080:8080"
     volumes:
       - monitorvolume:/usr/src/app/logfiles
     networks:
@@ -14,14 +13,17 @@ services:
 
   wunderidentityprovider:
     image: ghcr.io/tanmoysg/wunder-identity-provider:latest
+    container_name: identityprovider
     depends_on:
       - monitor
     ports:
-      - 5000:5000
+      - "5000:5000"
     volumes:
       - ${PWD}/configs/:/app/configs/
     networks:
       - wundernetwork
+    logging:
+      driver: none
 
 networks:
   wundernetwork:
