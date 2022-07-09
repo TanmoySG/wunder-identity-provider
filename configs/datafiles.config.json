@@ -1,7 +1,7 @@
 {
     "authlib-store" : "dataFiles/authlib.json",
     "user-profile-store" : "dataFiles/wunder_profiles_store.json",
-    "otp-verification-window" : 90,
+    "otp-verification-window" : 120,
     "long-term-purge-timespan" : 60,
     "short-term-purge-timespan" : 2
 }
