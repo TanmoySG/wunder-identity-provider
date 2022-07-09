@@ -1,4 +1,3 @@
-URL:="localhost:5000"
 
 setup:
 	@pip install -r requirements.txt
@@ -75,21 +74,10 @@ teardown:
 
 
 run-register:
-	@curl --request POST \
-		--url http://$(URL)/register/generate \
-		--header 'content-type: application/json' \
-		--data '{"email": "$(DEMO_USER_MAIL)", "name": "$(DEMO_USER_NAME)","password": "$(DEMO_USER_PWD)"}'
+	@. ./demo/scripts/register.sh 
 
 run-verify-otp:
-	@read -p "Enter OTP: " OTP
-	@curl --request POST \
-		--url http://$(URL)/register/verify \
-		--header 'content-type: application/json' \
-		--data '{"email": "$(DEMO_USER_MAIL)", "otp": "$(OTP)"}'
+	@. ./demo/scripts/verify-otp.sh 
 
 run-login:
-	@read -p "Enter OTP: " OTP
-	@curl --request POST \
-		--url http://$(URL)/login \
-		--header 'content-type: application/json' \
-		--data '{"email": "$(DEMO_USER_MAIL)", "password": "$(DEMO_USER_PWD)"}'
+	@. ./demo/scripts/login.sh  
